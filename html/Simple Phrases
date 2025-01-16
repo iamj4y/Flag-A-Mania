@@ -1,8 +1,8 @@
 // gemini help //
-<!DOCTYPE html>   
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Country Selector</title>
+    <title>Select a Country</title>
 </head>
 <body>
 
@@ -16,77 +16,175 @@
         <h1>Select a Country</h1>
         <div>
             <button class="country-button">
-                <img src="flags/flag1.png" alt="Flag 1" width="80" height="60">
+                <img src="flags/usa.png" alt="United States" width="80" height="60">
             </button>
-            <p class="country-name">Country 1</p>
+            <p class="country-name">United States</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag2.png" alt="Flag 2" width="80" height="60">
+                <img src="flags/canada.png" alt="Canada" width="80" height="60">
             </button>
-            <p class="country-name">Country 2</p>
+            <p class="country-name">Canada</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag3.png" alt="Flag 3" width="80" height="60">
+                <img src="flags/mexico.png" alt="Mexico" width="80" height="60">
             </button>
-            <p class="country-name">Country 3</p>
+            <p class="country-name">Mexico</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag4.png" alt="Flag 4" width="80" height="60">
+                <img src="flags/brazil.png" alt="Brazil" width="80" height="60">
             </button>
-            <p class="country-name">Country 4</p>
+            <p class="country-name">Brazil</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag5.png" alt="Flag 5" width="80" height="60">
+                <img src="flags/argentina.png" alt="Argentina" width="80" height="60">
             </button>
-            <p class="country-name">Country 5</p>
+            <p class="country-name">Argentina</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag6.png" alt="Flag 6" width="80" height="60">
+                <img src="flags/colombia.png" alt="Colombia" width="80" height="60">
             </button>
-            <p class="country-name">Country 6</p>
+            <p class="country-name">Colombia</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag7.png" alt="Flag 7" width="80" height="60">
+                <img src="flags/peru.png" alt="Peru" width="80" height="60">
             </button>
-            <p class="country-name">Country 7</p>
+            <p class="country-name">Peru</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag8.png" alt="Flag 8" width="80" height="60">
+                <img src="flags/chile.png" alt="Chile" width="80" height="60">
             </button>
-            <p class="country-name">Country 8</p>
+            <p class="country-name">Chile</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag9.png" alt="Flag 9" width="80" height="60">
+                <img src="flags/cuba.png" alt="Cuba" width="80" height="60">
             </button>
-            <p class="country-name">Country 9</p>
+            <p class="country-name">Cuba</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag10.png" alt="Flag 10" width="80" height="60">
+                <img src="flags/venezuela.png" alt="Venezuela" width="80" height="60">
             </button>
-            <p class="country-name">Country 10</p>
+            <p class="country-name">Venezuela</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag11.png" alt="Flag 11" width="80" height="60">
+                <img src="flags/costa_rica.png" alt="Costa Rica" width="80" height="60">
             </button>
-            <p class="country-name">Country 11</p>
+            <p class="country-name">Costa Rica</p>
         </div>
         <div>
             <button class="country-button">
-                <img src="flags/flag12.png" alt="Flag 12" width="80" height="60">
+                <img src="flags/ecuador.png" alt="Ecuador" width="80" height="60">
             </button>
-            <p class="country-name">Country 12</p>
+            <p class="country-name">Ecuador</p>
         </div>
-    </div>
-
-</body>
-</html>
+        <div>
+            <button class="country-button">
+                <img src="flags/guatemala.png" alt="Guatemala" width="80" height="60">
+            </button>
+            <p class="country-name">Guatemala</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/honduras.png" alt="Honduras" width="80" height="60">
+            </button>
+            <p class="country-name">Honduras</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/el_salvador.png" alt="El Salvador" width="80" height="60">
+            </button>
+            <p class="country-name">El Salvador</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/nicaragua.png" alt="Nicaragua" width="80" height="60">
+            </button>
+            <p class="country-name">Nicaragua</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/panama.png" alt="Panama" width="80" height="60">
+            </button>
+            <p class="country-name">Panama</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/haiti.png" alt="Haiti" width="80" height="60">
+            </button>
+            <p class="country-name">Haiti</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/dominican_republic.png" alt="Dominican Republic" width="80" height="60">
+            </button>
+            <p class="country-name">Dominican Republic</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/cuba.png" alt="Cuba" width="80" height="60">
+            </button>
+            <p class="country-name">Cuba</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/jamaica.png" alt="Jamaica" width="80" height="60">
+            </button>
+            <p class="country-name">Jamaica</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/bahamas.png" alt="Bahamas" width="80" height="60">
+            </button>
+            <p class="country-name">Bahamas</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/barbados.png" alt="Barbados" width="80" height="60">
+            </button>
+            <p class="country-name">Barbados</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/trinidad_and_tobago.png" alt="Trinidad and Tobago" width="80" height="60">
+            </button>
+            <p class="country-name">Trinidad and Tobago</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/guyana.png" alt="Guyana" width="80" height="60">
+            </button>
+            <p class="country-name">Guyana</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/suriname.png" alt="Suriname" width="80" height="60">
+            </button>
+            <p class="country-name">Suriname</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/french_guiana.png" alt="French Guiana" width="80" height="60">
+            </button>
+            <p class="country-name">French Guiana</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/belize.png" alt="Belize" width="80" height="60">
+            </button>
+            <p class="country-name">Belize</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/el_salvador.png" alt="El Salvador" width="80" height="60">
+            </button>
+            <p class="country-name">El Salvador</p>
+        </        
