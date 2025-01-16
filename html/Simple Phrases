@@ -1,0 +1,92 @@
+// gemini help //
+<!DOCTYPE html>   
+<html>
+<head>
+    <title>Country Selector</title>
+</head>
+<body>
+
+    <header>
+        <button class="exit-button">Exit</button>
+        <input type="text" class="search-bar" placeholder="Search">
+        <button class="settings-button">Settings</button>
+    </header>
+
+    <div class="country-container">
+        <h1>Select a Country</h1>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag1.png" alt="Flag 1" width="80" height="60">
+            </button>
+            <p class="country-name">Country 1</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag2.png" alt="Flag 2" width="80" height="60">
+            </button>
+            <p class="country-name">Country 2</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag3.png" alt="Flag 3" width="80" height="60">
+            </button>
+            <p class="country-name">Country 3</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag4.png" alt="Flag 4" width="80" height="60">
+            </button>
+            <p class="country-name">Country 4</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag5.png" alt="Flag 5" width="80" height="60">
+            </button>
+            <p class="country-name">Country 5</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag6.png" alt="Flag 6" width="80" height="60">
+            </button>
+            <p class="country-name">Country 6</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag7.png" alt="Flag 7" width="80" height="60">
+            </button>
+            <p class="country-name">Country 7</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag8.png" alt="Flag 8" width="80" height="60">
+            </button>
+            <p class="country-name">Country 8</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag9.png" alt="Flag 9" width="80" height="60">
+            </button>
+            <p class="country-name">Country 9</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag10.png" alt="Flag 10" width="80" height="60">
+            </button>
+            <p class="country-name">Country 10</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag11.png" alt="Flag 11" width="80" height="60">
+            </button>
+            <p class="country-name">Country 11</p>
+        </div>
+        <div>
+            <button class="country-button">
+                <img src="flags/flag12.png" alt="Flag 12" width="80" height="60">
+            </button>
+            <p class="country-name">Country 12</p>
+        </div>
+    </div>
+
+</body>
+</html>
