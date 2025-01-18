@@ -1,5 +1,6 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
 
 #topNav {
@@ -33,7 +34,7 @@ a:hover {
 }
 
 p {
-    font-family:
+    font-size: medium;
 }
 
 h3 {
@@ -42,6 +43,24 @@ h3 {
 
 #playNow {
     background-color: #c5daf6;
+    text-align: center;
+}
+
+#startPlaying {
+    display: flex;
+}
+
+#listSection {
+    display: flex;
+}
+
+#infoRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutUsSection {
+    display: flex;
     text-align: center;
 }
 
