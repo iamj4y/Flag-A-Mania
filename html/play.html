@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Play | Flag-A-Mania</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/playPage.js"></script>
   </head>
   <body>
@@ -12,27 +12,26 @@
     </div>
     <div class="playHead">
       <a href="./index.html" class="exit-button">
-      <img src="#">
+      <img src="../img/icons/close.png" width="40">
     </a>
     <h1>Select a Game Mode</h1>
     </div>
       <div id="largeButtonSection"> 
          <a href="#" class="gameModeButton">
            <div class="modeButtonSpace">
-              <img src="./settings.html">
-              <h2>Start Game</h2>
+              <!-- <img src="./settings.html"> -->
+              <button id="startGame" class="largeButton"><img src="../img/icons/play.png" width="90px" id="play">Start<br>Game</button>
            </div>
          </a>
          <a href="#" class="gameModeButton">
            <div class="modeButtonSpace">
-              <img src="#">
-              <h2>Learning Mode</h2>
+            <button id="learningMode" class="largeButton"><img src="../img/icons/lightbulb.png" width="100px" id="lightbulb">Learning<br>Mode</button>
            </div>
          </a>
       </div>
-    <div class="smallButtonSection">
-      <button class="smallButton">Progress</button>
-      <button class="smallButton">Settings</button>
+    <div id="smallButtonSection">
+      <button class="smallButton"><img src="../img/icons/arrow.png" width="40px" id="arrow">Progress</button>
+      <button class="smallButton"><img src="../img/icons/gear.png" width="30px" id="gear">Settings</button>
     </div>
   </body>
 </html>

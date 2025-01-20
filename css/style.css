@@ -5,7 +5,6 @@
     src: url('../font/Batangas Bold 700.otf');
   }
 
-
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
@@ -47,7 +46,7 @@ p {
 
 h3 {
     font-family: 'Fredoka';
-    color: #032078
+    color: #032078;
 }
 
 #playNow {
@@ -65,7 +64,6 @@ h3 {
 
 #infoRow {
     display: flex;
-    justify-content: space-between;
 }
 
 #aboutUsSection {
@@ -84,4 +82,84 @@ h3 {
 
 #bottomNav a {
     padding-left: 20px;
+}
+
+/* Elements for play.html */
+
+h1 {
+    text-align: center;
+    font-family: 'Fredoka';
+    color: #032078
+}
+
+.exit-button {
+    float: left;
+}
+
+.gameModeButton {
+    text-decoration: none;
+}
+
+.largeButton {
+    background-color: #315e9b;
+    color: white;
+    font-family: 'Fredoka';
+    width: 250px;
+    height: 250px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: 0px 10px 20px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 5px 5px black;
+}
+
+#largeButtonSection {
+    display: flex;
+    justify-content: center;
+}
+
+.smallButton {
+    background-color: #315e9b;
+    color: white;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-shadow: 3px 3px black;
+    margin: 0px 10px 20px 10px;
+}
+
+#smallButtonSection {
+    display: flex;
+    justify-content: center;
+}
+
+#play {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(7px 7px 0px #222);
+}
+
+#lightbulb {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(3px 3px 0px #222);
+}
+
+#gear {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(3px 3px 0px #222);
+}
+
+#arrow {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(3px 3px 0px #222);
 }
