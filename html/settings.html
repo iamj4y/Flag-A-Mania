@@ -3,18 +3,40 @@
 <html>
   <head>
     <title>Game Settings | Flag-A-Mania</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <!--NOT COMPLETE-->
-      <a href="./play.html" class="exit-button">
-        <img src="#">
-      </a>
+    <a href="./play.html" class="exit-button">
+      <img src="../img/icons/close.png" width="40px">
+    </a>
     <div id="settingsBox">
-      <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
-      
+    <!--NOT COMPLETE-->
+      <label for="timer">Next Question Timer:</label>
+      <select name="timer" id="timer">
+        <option value="5secs">5 secs</option>
+        <option value="10secs">10 secs</option>
+        <option value="15secs">15 secs</option>
+        <option value="20secs">20 secs</option>
+      </select><br>
+      <label for="rounds">Number of Rounds:</label>
+      <select name="rounds" id="rounds">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select><br>
+      <label for="volumeSlider">Sound Volume:</label>
+      <input type="range" min="1" max="100" value="50" class="slider" name="volumeSlider" id="volumeSlider"><br>
+      <label for="contrast">High Contrast Mode:</label>
+      <button type="button" name="contrast">OFF</button><br>
+      <label for="tts">Text-to-Speech:</label>
+      <button type="button" name="tts">OFF</button>
       <div class="finalConfirmation">
-        <a href="./play.html">Cancel</a>
+          <form action="./play.html">
+            <input type="submit" value="Cancel">
+          </form>
         <button type="button" class="confirmButton">Confirm</button>
       </div>
     </div>
