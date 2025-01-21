@@ -9,7 +9,7 @@
     <a href="./play.html" class="exit-button">
       <img src="../img/icons/close.png" width="40px">
     </a>
-    <div id="settingsBox">
+    <div id="triviaSettingsBox">
     <!--NOT COMPLETE-->
     <h1 id="triviah1">Trivia Game Settings</h1>
       <div class="horizontalSettings">
@@ -51,6 +51,33 @@
           </form>
         <button type="button" class="submitButtons">Confirm</button>
       </div>
+    </div><br>
+
+    <!-- BOX FOR LEARNING MODE SETTINGS-->
+    <div id="learningSettingsBox">
+      <h1 id="learningh1">Learning Mode Settings</h1>
+      <div class="horizontalSettings">
+        <label for="volumeSlider">Sound Volume:</label>
+        <input type="range" min="1" max="100" value="50" class="settingInputs" name="learningVolumeSlider" id="learningVolumeSlider">
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="hints">Hints:</label>
+        <button type="button" name="hints" class="settingInputs">ON</button>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="contrast">High Contrast Mode:</label>
+        <button type="button" name="contrast" class="settingInputs">OFF</button>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="tts">Text-to-Speech:</label>
+        <button type="button" name="tts" class="settingInputs">OFF</button>
+      </div><br>
+      <div class="finalConfirmation">
+        <form action="./play.html">
+          <button type="submit" class="submitButtons">Cancel</button>
+        </form>
+      <button type="button" class="submitButtons">Confirm</button>
+    </div>
     </div>
   </body>
 </html>
