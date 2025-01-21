@@ -11,33 +11,45 @@
     </a>
     <div id="settingsBox">
     <!--NOT COMPLETE-->
-      <label for="timer">Next Question Timer:</label>
-      <select name="timer" id="timer">
-        <option value="5secs">5 secs</option>
-        <option value="10secs">10 secs</option>
-        <option value="15secs">15 secs</option>
-        <option value="20secs">20 secs</option>
-      </select><br>
-      <label for="rounds">Number of Rounds:</label>
-      <select name="rounds" id="rounds">
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select><br>
-      <label for="volumeSlider">Sound Volume:</label>
-      <input type="range" min="1" max="100" value="50" class="slider" name="volumeSlider" id="volumeSlider"><br>
-      <label for="contrast">High Contrast Mode:</label>
-      <button type="button" name="contrast">OFF</button><br>
-      <label for="tts">Text-to-Speech:</label>
-      <button type="button" name="tts">OFF</button>
+    <h1 id="triviah1">Trivia Game Settings</h1>
+      <div class="horizontalSettings">
+        <label for="timer">Next Question Timer:</label>
+        <select name="timer" id="timer" class="settingInputs">
+          <option value="5secs">5 secs</option>
+          <option value="10secs">10 secs</option>
+          <option value="15secs">15 secs</option>
+          <option value="20secs">20 secs</option>
+        </select>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="rounds">Number of Rounds:</label>
+        <select name="rounds" id="rounds" class="settingInputs">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="volumeSlider">Sound Volume:</label>
+        <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+      </div><br>
+      <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+      <div class="horizontalSettings">
+        <label for="contrast">High Contrast Mode:</label>
+        <button type="button" name="contrast" class="settingInputs">OFF</button>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="tts">Text-to-Speech:</label>
+        <button type="button" name="tts" class="settingInputs">OFF</button>
+      </div><br>
       <div class="finalConfirmation">
           <form action="./play.html">
-            <input type="submit" value="Cancel">
+            <button type="submit" class="submitButtons">Cancel</button>
           </form>
-        <button type="button" class="confirmButton">Confirm</button>
+        <button type="button" class="submitButtons">Confirm</button>
       </div>
     </div>
   </body>

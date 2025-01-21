@@ -71,6 +71,7 @@ h3 {
     text-align: center;
 }
 
+
 #infoRow > div {
     margin: auto;
     padding: 5px;
@@ -79,7 +80,7 @@ h3 {
     text-align: center;
 }
 
-#inforRow > div > img  {
+#infoRow > div > img  {
     
     display: block;
     margin-left: auto;
@@ -95,13 +96,14 @@ h3 {
     vertical-align: top;
 }
 
+
 #bottomNav {
     display: flex;
     font-family: 'Fredoka';
     background-color: #315e9b;
-    align-items: center;
-    padding: 0 10px;
-    height: 80px;
+  align-items: center;
+  padding: 0 10px;
+  height: 80px;
 }
 
 #bottomNav a {
@@ -118,6 +120,8 @@ h1 {
 
 .exit-button {
     float: left;
+    width: 40px;
+    height: 40px;
 }
 
 .gameModeButton {
@@ -186,4 +190,56 @@ h1 {
 #arrow {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(3px 3px 0px #222);
+}
+
+/* Elements for settings */
+
+#triviah1 {
+    color: white;
+}
+
+#settingsBox {
+    background-color: #315e9b;
+    color: white;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-shadow: 3px 3px black;
+    margin: 0px 10px 0px 100px;
+}
+
+.horizontalSettings {
+    display: flex;
+    margin-left: 20px;
+}
+
+.settingInputs {
+    margin-left: 13px;
+    background-color: #032078;
+    color: white;
+}
+
+.submitButtons {
+    background-color: white;
+    color: #032078;
+    width: 130px;
+    height: 50px;
+    border-radius: 6px;
+    font-family: 'Fredoka';
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.finalConfirmation {
+    display: flex;
+    justify-content: center;
 }
