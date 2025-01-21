@@ -198,7 +198,7 @@ h1 {
     color: white;
 }
 
-#settingsBox {
+#triviaSettingsBox {
     background-color: #315e9b;
     color: white;
     font-family: 'Fredoka';
@@ -242,4 +242,24 @@ h1 {
 .finalConfirmation {
     display: flex;
     justify-content: center;
+}
+
+#learningSettingsBox {
+    background-color: #315e9b;
+    color: white;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-shadow: 3px 3px black;
+    margin: 0px 10px 0px 100px;
+}
+
+#learningh1 {
+    color: white;
 }
