@@ -269,3 +269,11 @@ h1 {
 #learningh1 {
     color: white;
 }
+
+.largeButton:hover {
+    color: pink;
+}
+
+.smallButton:hover {
+    color: pink;
+}

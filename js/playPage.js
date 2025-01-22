@@ -1,9 +1,11 @@
 var settingsBox = document.getElementById("triviaSettingsBox");
 
+triviaSettingsBox.style.display = "none";
+
 var settingsButton = document.getElementById("settingsButton");
 
 settingsButton.addEventListener("click", settingsClick);
 
 function settingsClick() {
-    settingsButton.innerHTML = "Clicked!";
+    triviaSettingsBox.style.display = "block";
 }

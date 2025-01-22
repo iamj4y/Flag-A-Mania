@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title>Play | Flag-A-Mania</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/playPage.js"></script>
   </head>
   <body>
-    <div id="settings" position="absolute" hidden>
-      
+    <div id="settings" position="absolute">
+      <div id="triviaSettingsBox">
+        <!--NOT COMPLETE-->
+        <h1 id="triviah1">Trivia Game Settings</h1>
+          <div class="horizontalSettings">
+            <label for="timer">Next Question Timer:</label>
+            <select name="timer" id="timer" class="settingInputs">
+              <option value="5secs">5 secs</option>
+              <option value="10secs">10 secs</option>
+              <option value="15secs">15 secs</option>
+              <option value="20secs">20 secs</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="rounds">Number of Rounds:</label>
+            <select name="rounds" id="rounds" class="settingInputs">
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="volumeSlider">Sound Volume:</label>
+            <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+          </div><br>
+          <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+          <div class="horizontalSettings">
+            <label for="contrast">High Contrast Mode:</label>
+            <button type="button" name="contrast" class="settingInputs">OFF</button>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="tts">Text-to-Speech:</label>
+            <button type="button" name="tts" class="settingInputs">OFF</button>
+          </div><br>
+          <div class="finalConfirmation">
+              <form action="./play.html">
+                <button type="submit" class="submitButtons">Cancel</button>
+              </form>
+            <button type="button" class="submitButtons">Confirm</button>
+          </div>
+        </div>
     </div>
     <div class="playHead">
       <a href="./index.html" class="exit-button">
@@ -31,7 +72,8 @@
       </div>
     <div id="smallButtonSection">
       <button class="smallButton"><img src="../img/icons/arrow.png" width="40px" id="arrow">Progress</button>
-      <button class="smallButton"><img src="../img/icons/gear.png" width="30px" id="gear">Settings</button>
+      <button type="button" class="smallButton" id="settingsButton"><img src="../img/icons/gear.png" width="30px" id="gear">Settings</button>
     </div>
+    <script src="../js/playPage.js"></script>
   </body>
 </html>
