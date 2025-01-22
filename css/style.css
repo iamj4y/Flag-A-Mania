@@ -213,7 +213,12 @@ h1 {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    margin: 0px 10px 0px 100px;
+    z-index: 1100;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    display: none;
+    animation: zoomIn 0.3s ease-out forwards;
 }
 
 .horizontalSettings {
@@ -264,6 +269,7 @@ h1 {
     flex-direction: column;
     text-shadow: 3px 3px black;
     margin: 0px 10px 0px 100px;
+
 }
 
 #learningh1 {
@@ -276,4 +282,26 @@ h1 {
 
 .smallButton:hover {
     color: pink;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1000;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: translate(-50%, -50%) scale(0); /* Start scaled down */
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1); /* End at normal size */
+        opacity: 1;
+    }
 }
