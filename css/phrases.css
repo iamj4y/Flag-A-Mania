@@ -54,8 +54,15 @@ header {
 }
 
 .country-container {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-button {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
 }
 
 .country-button {
