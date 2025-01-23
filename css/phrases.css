@@ -2,11 +2,11 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: white; /* Set background to white */
+  background-color: white;
 }
 
 header {
-  background-color: #333; /* Dark gray header */
+  background-color: #333;
   color: white;
   padding: 10px;
   display: flex;
@@ -15,28 +15,41 @@ header {
 }
 
 .exit-button {
-  background-color: #3498db; /* Blue exit button */
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
+  color: #3498db; 
+  font-size: 20px;
   cursor: pointer;
 }
 
 .search-bar {
-  width: 200px;
+  width: 250px; /* Increased width */
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #cfe2ff; /* Light blue search bar */
+  background-color: #cfe2ff;
+  display: flex;
+  align-items: center; 
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-bar::after {
+  content: "\f002"; /* Magnifying glass icon from Font Awesome */
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .settings-button {
-  background-color: #3498db; /* Blue settings button */
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
+  color: #3498db;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -46,24 +59,34 @@ header {
 }
 
 .country-button {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
-  background-color: #fff; /* White button background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Center the content within each button */
 .country-button img {
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .country-name {
   margin-top: 5px;
   text-align: center;
+  font-family: "Times New Roman", serif;
+  color: #3498db; 
 }
+
+@media (max-width: 768px) { 
+  .country-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
