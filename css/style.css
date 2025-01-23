@@ -214,9 +214,9 @@ h1 {
     flex-direction: column;
     text-shadow: 3px 3px black;
     z-index: 1100;
-    position: absolute;
-    top: 250px;
-    margin-left: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     display: none;
 }
 
