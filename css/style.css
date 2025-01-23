@@ -216,9 +216,8 @@ h1 {
     z-index: 1100;
     position: absolute;
     top: 250px;
-    left: 400px;
+    margin-left: 400px;
     display: none;
-    animation: zoomIn 0.3s ease-out forwards;
 }
 
 .horizontalSettings {
@@ -297,11 +296,23 @@ h1 {
 
 @keyframes zoomIn {
     from {
-        transform: translate(-50%, -50%) scale(0); /* Start scaled down */
+        transform: translate(-50%, -50%) scale(0); 
         opacity: 0;
     }
     to {
-        transform: translate(-50%, -50%) scale(1); /* End at normal size */
+        transform: translate(-50%, -50%) scale(1);
         opacity: 1;
+    }
+
+}
+
+@keyframes zoomOut {
+    from {
+        transform: translate(-50%, -50%) scale(1); 
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
     }
 }
