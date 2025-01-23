@@ -6,12 +6,18 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: white;
   color: white;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1 {
+  color: #3498db; /* Dark blue color */
+  font-family: "Times New Roman", serif;
+  font-size: 24px; /* Adjust font size as needed */
 }
 
 .exit-button {
@@ -21,24 +27,12 @@ header {
 }
 
 .search-bar {
-  width: 250px; /* Increased width */
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #cfe2ff;
-  display: flex;
-  align-items: center; 
-}
-
-.search-bar input[type="text"] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 5px;
+  width: 300px; /* Increased width */
+  padding: 10px; 
 }
 
 .search-bar::after {
-  content: "\f002"; /* Magnifying glass icon from Font Awesome */
+  content: "\f002"; /* Magnifying glass icon */
   font-family: "Font Awesome 5 Free"; 
   font-weight: 900; 
   position: absolute;
@@ -47,10 +41,22 @@ header {
   transform: translateY(-50%);
 }
 
+.search-bar input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: white; /* Set text color to white */
+  font-family: "Times New Roman", serif; /* Set font to Times New Roman */
+}
+
 .settings-button {
-  color: #3498db;
-  font-size: 20px;
-  cursor: pointer;
+  color: #3498db; 
+  font-size: 20px; 
+}
+
+.settings-button::before {
+  content: "☰"; /* Three horizontal lines */
 }
 
 .country-container {
