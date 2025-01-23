@@ -5,23 +5,13 @@ body {
   background-color: white;
 }
 
-title {
-  align-items: center;
-}
-
 header {
-  background-color: white;
+  background-color: #333;
   color: white;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-h1 {
-  color: #3498db; /* Dark blue color */
-  font-family: "Times New Roman", serif;
-  font-size: 24px; /* Adjust font size as needed */
 }
 
 .exit-button {
@@ -31,12 +21,26 @@ h1 {
 }
 
 .search-bar {
-  width: 300px; /* Increased width */
-  padding: 10px; 
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cfe2ff; /* Light blue background */
+  display: flex;
+  align-items: center; 
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: white;
+  font-family: "Times New Roman", serif;
 }
 
 .search-bar::after {
-  content: "\f002"; /* Magnifying glass icon */
+  content: "\f002"; 
   font-family: "Font Awesome 5 Free"; 
   font-weight: 900; 
   position: absolute;
@@ -45,43 +49,24 @@ h1 {
   transform: translateY(-50%);
 }
 
-.search-bar input[type="text"] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 5px;
-  color: white; /* Set text color to white */
-  font-family: "Times New Roman", serif; /* Set font to Times New Roman */
-}
-
 .settings-button {
   color: #3498db; 
-  font-size: 20px; 
-}
-
-.settings-button::before {
-  content: "☰"; /* Three horizontal lines */
+  font-size: 16px; 
 }
 
 .country-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .row {
-  display: flex; 
+  display: flex;
 }
 
 .country-button {
-  width: 150px;
-  height: 150px;
-  margin: 15px;
-}
-
-.country-button {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -100,14 +85,13 @@ h1 {
   margin-top: 5px;
   text-align: center;
   font-family: "Times New Roman", serif;
-  color: #3498db; 
+  color: #3498db;
 }
 
-@media (max-width: 768px) { 
-  .country-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+h1 {
+  color: #3498db; 
+  font-family: "Times New Roman", serif;
+  font-size: 24px; 
+  margin-bottom: 20px; /* Add margin to space out heading */
 }
 
