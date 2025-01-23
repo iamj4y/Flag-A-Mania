@@ -4,7 +4,11 @@ const dim = document.getElementById("overlay");
 
 const settingsButton = document.getElementById("settingsButton");
 
+const settingsCancel = document.getElementById("cancelButton");
+
 settingsButton.addEventListener("click", settingsClick);
+
+settingsCancel.addEventListener("click", cancelClick);
 
 function settingsClick() {
     settingsBox.style.display = "block";
@@ -27,4 +31,15 @@ function settingsClick() {
 
     animateBox = setInterval(frame, 1); */
 
+}
+
+function cancelClick() {
+    settingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
+
+    setTimeout(Reset, 300)
+
+    function Reset() {
+    settingsBox.style.display = "none";
+    dim.style.display = "none";
+    }
 }
