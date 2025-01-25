@@ -8,6 +8,8 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
+    width: 100%;
+    margin: 0;
 }
 
 #topNav {
@@ -41,7 +43,12 @@ a:hover {
 #brightness {
     width: 30px;
     height: 30px;
+    border-style: solid;
+    border: black;
+    margin-right: 0;
+    margin-left: auto;
 }
+
 
 p {
     font-size: medium;
