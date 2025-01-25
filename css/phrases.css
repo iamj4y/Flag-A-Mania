@@ -131,9 +131,8 @@ a:hover {
 #brightness {
     width: 30px;
     height: 30px;
-}
-
-#darkMode {
+    border-style: dashed;
+    border: rgb(1, 1, 1);
     margin-right: 0;
     margin-left: auto;
 }
