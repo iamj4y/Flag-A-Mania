@@ -133,6 +133,11 @@ a:hover {
     height: 30px;
 }
 
+#darkMode {
+    margin-right: 0;
+    margin-left: auto;
+}
+
 #bottomNav {
     display: flex;
     font-family: 'Fredoka';
