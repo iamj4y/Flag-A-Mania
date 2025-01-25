@@ -10,7 +10,7 @@ header {
   color: white;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+justify-content: flex-start;
   align-items: center;
 }
 
@@ -84,14 +84,72 @@ header {
 .country-name {
   margin-top: 5px;
   text-align: center;
-  font-family: "Times New Roman", serif;
-  color: #3498db;
+  font-family: "Tahoma", sans-serif;
+  color: #032078;
+  font-weight: 600;
 }
 
 h1 {
-  color: #3498db; 
-  font-family: "Times New Roman", serif;
+  color: #032078;
+  font-family: 'Fredoka';
   font-size: 24px; 
   margin-bottom: 20px; /* Add margin to space out heading */
 }
 
+#search-icon {
+    margin-right: 50px;
+}
+
+#topNav {
+    display: flex;
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+  align-items: center;
+  padding: 0 10px;
+  height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navlink {
+    margin-left: 20px;
+}
+
+a:hover {
+    color: pink;
+}
+
+#logo {
+    width: 100px;
+    padding-left: 5px;
+}
+
+#brightness {
+    width: 30px;
+    height: 30px;
+}
+
+#bottomNav {
+    display: flex;
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+    align-items: center;
+    padding: 0 10px;
+    height: 80px;
+    position: relative
+  }
+  
+  #bottomNav a {
+      padding-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+  }
+  
+  #bottomNav a:hover {
+      color: pink;
+  }

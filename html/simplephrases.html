@@ -3,17 +3,27 @@
 <head>
     <title>Select a Country</title>
     <link rel="stylesheet" href="../css/phrases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+    <nav id="topNav">
+        <!--NOT COMPLETE-->
+        <a href="./index.html"><img src="../img/logo2.png"  id="logo"></a>
+          <a href="./play.html" class="navlink">Play</a>
+          <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
+          <a href="#" class="navlink">Interesting Facts (AR Mode)</a>
+        <button class="darkMode">
+          <img src="../img/icons/brightness.png" alt="Brightness" id="brightness" width="30px">
+        </button>
+      </nav>
     <header>
         <a href="./index.html" class="exit-button">
             <div class="">
                 <img src="../img/icons/close.png" width="50px">
             </div>
         </a>
-        <input type="text" class="search-bar" placeholder="Search">
-        <button class="settings-button">Settings</button>
+        <input type="text" class="search-bar" placeholder="Search"><i class="fa fa-search" id="search-icon"></i>
+        <button class="settings-button"><img src="../img/icons/settings.png" width="30px"></button>
     </header>
 
     <div class="country-container">
@@ -186,6 +196,15 @@
                     <img src="../img/flag/gf.svg" alt="French Guiana" width="80" height="60">
                 </button>
                 <p class="country-name">French Guiana</p>
+            </div>
+        </div>
+    </div>
+    <footer id="bottomNav">
+    <img src="../img/small logo.png" width="100" alt="Flag-A-Mania logo">
+    <a href="#help">Help</a>
+    <a href="#share">Share</a>
+    </footer>
+    <script src="../js/simplePhrases.js"></script>
 </body>
 </html>
 
