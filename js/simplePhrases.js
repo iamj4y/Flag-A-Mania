@@ -2,7 +2,8 @@ function startScript() {
 
     
 
-    const buttons = document.querySelectorAll('button');
+   const container = document.getElementById("country-container");
+    const buttons = container.querySelectorAll('button');
 
 
     buttons.forEach(button => {
@@ -13,7 +14,5 @@ function startScript() {
           window.location.href = '../html/countrySimplePhrases.html';
         });
     });
-    
-}
 
 window.addEventListener("load", startScript, false);
