@@ -4,50 +4,58 @@
   <head>
     <title>Play | Flag-A-Mania</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/playPage.js"></script>
   </head>
   <body>
+    <nav id="topNav">
+      <!--NOT COMPLETE-->
+      <a href="./index.html"><img src="../img/logo2.png"  id="logo"></a>
+        <a href="./play.html" class="navlink">Play</a>
+        <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
+        <a href="#" class="navlink">Interesting Facts (AR Mode)</a>
+      <button id="darkMode">
+        <img src="../img/icons/brightness.png" alt="Brightness" id="brightness" width="30px">
+      </button>
+    </nav>
     <div id="settings" position="absolute">
       <!-- This is the code for the Settings pop-up boxes-->
       <div id="overlay"></div>
       <div id="triviaSettingsBox">
         <h1 id="triviah1">Trivia Game Settings</h1>
+        <form name="mysettings" id="settingsArea">
           <div class="horizontalSettings">
             <label for="timer">Next Question Timer:</label>
             <select name="timer" id="timer" class="settingInputs">
-              <option value="5secs">5 secs</option>
-              <option value="10secs">10 secs</option>
-              <option value="15secs">15 secs</option>
-              <option value="20secs">20 secs</option>
+              <option value=5>5 secs</option>
+              <option value=10>10 secs</option>
+              <option value=15>15 secs</option>
+              <option value=20>20 secs</option>
             </select>
           </div><br>
           <div class="horizontalSettings">
-            <label for="rounds">Number of Rounds:</label>
-            <select name="rounds" id="rounds" class="settingInputs">
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
+            <label for="questions">Number of Questions:</label>
+            <select name="questions" id="questions" class="settingInputs">
+              <option value=5>5</option>
+              <option value=10>10</option>
+              <option value=15>15</option>
+              <option value=20>20</option>
             </select>
           </div><br>
           <div class="horizontalSettings">
             <label for="volumeSlider">Sound Volume:</label>
             <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+            <p id="sliderTxt"></p>
           </div><br>
           <!--NOTE: The elements for these buttons might not be the appropriate ones -->
           <div class="horizontalSettings">
-            <label for="contrast">High Contrast Mode:</label>
-            <button type="button" name="contrast" class="settingInputs">OFF</button>
-          </div><br>
-          <div class="horizontalSettings">
             <label for="tts">Text-to-Speech:</label>
-            <button type="button" name="tts" class="settingInputs">OFF</button>
+            <button type="button" name="tts" class="settingInputs" id="tts" data-value="off">OFF</button>
           </div><br>
           <div class="finalConfirmation">
-                <button type="submit" class="submitButtons" id="cancelButton">Cancel</button>
-            <button type="button" class="submitButtons" id="confirmButton">Confirm</button>
+                <button type="button" class="submitButtons" id="cancelButton">Cancel</button>
+                <button type="button" class="submitButtons" id="confirmButton" name="confirmButton">Confirm</button>
           </div>
+        </form>
         </div>
     </div>
 
@@ -75,6 +83,11 @@
       <button class="smallButton"><img src="../img/icons/arrow.png" width="40px" id="arrow">Progress</button>
       <button type="button" class="smallButton" id="settingsButton"><img src="../img/icons/gear.png" width="30px" id="gear">Settings</button>
     </div>
-    <script src="../js/playPage.js"></script>
+    <footer id="bottomNav">
+      <img src="../img/small logo.png" width="100" alt="Flag-A-Mania logo">
+      <a href="#help">Help</a>
+      <a href="#share">Share</a>
+    </footer>
+
   </body>
 </html>
