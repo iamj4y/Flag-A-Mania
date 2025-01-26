@@ -7,6 +7,8 @@ function main(){
 
     const settingsCancel = document.getElementById("cancelButton");
 
+    const settingsSaved = document.getElementById("settingsSaved");
+
     settingsButton.addEventListener("click", settingsClick);
 
     settingsCancel.addEventListener("click", cancelClick);
@@ -65,6 +67,45 @@ function main(){
         document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
         document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
 
+        settingsSaved.style.display = "block";
+
+        settingsSaved.className = "";
+
+        setTimeout(savedReset, 2000)
+
+        function wavyAnimation(text) {
+
+        let delay = 100;
+
+      settingsSaved.innerHTML = text
+        .split("")
+        .map(letter => {
+          console.log(letter);
+          return `<span>` + letter + `</span>`;
+        })
+        .join("");
+
+      Array.from(settingsSaved.children).forEach((span, index) => {
+        setTimeout(() => {
+          span.classList.add("wavy");
+        }, index * 60 + delay);
+      });
+
+      const totalWavyDuration = 0.6 * 1000 + delay + text.length * 60;
+    setTimeout(() => {
+        settingsSaved.classList.add("fade-out"); // 
+    }, totalWavyDuration);
+
+
+    }
+
+    wavyAnimation("Settings Saved!")
+
+
+        function savedReset() {
+            settingsSaved.style.display = "none";
+        }
+
         settingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
         setTimeout(Reset, 300)
 
@@ -72,6 +113,7 @@ function main(){
         settingsBox.style.display = "none";
         dim.style.display = "none";
         }
+
     }
 
      function ttsOnOff() {
