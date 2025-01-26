@@ -364,7 +364,7 @@ h2 {
     top: 0;
     left: 0;
   }
-  
+
   @keyframes wavy {
     0% {
       top: 0px;
@@ -376,3 +376,18 @@ h2 {
       top: 0px;
     }
   }
+
+  .fade-out {
+    animation-name: fadeOut;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
