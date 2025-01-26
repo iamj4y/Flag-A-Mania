@@ -135,6 +135,11 @@ h1 {
     color: #032078
 }
 
+h2 {
+    text-align: center;
+    display: none;
+}
+
 .exit-button {
     float: left;
     width: 40px;
