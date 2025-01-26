@@ -47,12 +47,15 @@ a:hover {
 }
 
 #brightness {
-    width: 30px;
-    height: 30px;
-    border-style: solid;
-    border: black;
+    width: 40px;
+    height: 40px;
+    border: 2px dashed #ffffff;
     margin-right: 0;
     margin-left: auto;
+}
+
+#brightness:hover {
+    border: 2px solid #ffffff;
 }
 
 
@@ -147,7 +150,10 @@ h1 {
 
 h2 {
     text-align: center;
-    display: none;
+    color: rgb(13, 5, 163);
+    font-family: 'Batangas';
+     -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .exit-button {
