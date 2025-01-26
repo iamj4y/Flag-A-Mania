@@ -75,7 +75,22 @@ function countryPhrasePage() {
 
     abbr2Title(country);
 
+    //take in data from database
 
+    var category = "";
+
+    linkArray.forEach(navLink => {
+        navLink.addEventListener('click', function() {
+            categoryId = this.id;
+            console.log(categoryId)
+
+            while (contentDiv.hasChildNodes()){
+                contentDiv.removeChild(contentDiv.lastChild);
+                }
+            
+            var phraseList = document.createElement("ul");
+        });
+    });
 }
 
 window.addEventListener("load", countryPhrasePage, false);
