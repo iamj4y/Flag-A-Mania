@@ -110,6 +110,24 @@ justify-content: flex-start;
   font-weight: 600;
 }
 
+#do {
+  display: flex;
+  flex-direction: column;
+}
+
+#do-button {
+  align-self: center;
+}
+
+#tt {
+  display: flex;
+  flex-direction: column;
+}
+
+#tt-button {
+  align-self: center;
+}
+
 h1 {
   color: #032078;
   font-family: 'Fredoka';
