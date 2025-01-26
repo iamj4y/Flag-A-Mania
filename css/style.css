@@ -354,3 +354,25 @@ h2 {
         opacity: 0;
     }
 }
+
+.wavy {
+    animation-name: wavy;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -25px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
