@@ -74,13 +74,24 @@ function main(){
         }
     }
 
+     function ttsOnOff() {
+        if (ttsSwitch.value === "on") {
+            ttsSwitch.value = "off";
+            ttsSwitch.innerHTML = "OFF"
+        } else {
+            ttsSwitch.value = "on";
+            ttsSwitch.innerHTML = "ON"
+        }
+        
+    }
+    
     console.log(document.cookie)
     sliderTxt.innerHTML = volumeSli.value;
     function sliderChange() {
         sliderTxt.innerHTML = this.value;
     }    
     volumeSli.addEventListener("input", sliderChange, true);
-
+    ttsSwitch.addEventListener("click", ttsOnOff, false);
     confirmBtn.addEventListener("click", confirm);
 }
 
