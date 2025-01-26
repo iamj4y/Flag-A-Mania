@@ -118,10 +118,10 @@ function main(){
 
      function ttsOnOff() {
         if (ttsSwitch.value === "on") {
-            ttsSwitch.value = "off";
+            ttsSwitch.value = false;
             ttsSwitch.innerHTML = "OFF"
         } else {
-            ttsSwitch.value = "on";
+            ttsSwitch.value = true;
             ttsSwitch.innerHTML = "ON"
         }
         
