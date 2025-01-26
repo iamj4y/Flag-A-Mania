@@ -1,4 +1,4 @@
-const settingsBox = document.getElementById("triviaSettingsBox");
+const settingsBox = document.getElementById("triviaSettingsBox"); /* This is a variable for the settings box div */
 
 const dim = document.getElementById("overlay");
 
@@ -6,9 +6,9 @@ const settingsButton = document.getElementById("settingsButton");
 
 const settingsCancel = document.getElementById("cancelButton");
 
-settingsButton.addEventListener("click", settingsClick);
+settingsButton.addEventListener("click", settingsClick); /* This triggers the settingsClick function when you click on the settings button */
 
-settingsCancel.addEventListener("click", cancelClick);
+settingsCancel.addEventListener("click", cancelClick); /* This triggers the cancelClick function when you click on the cancel button */
 
 function settingsClick() {
     settingsBox.style.display = "block";

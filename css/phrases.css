@@ -20,6 +20,20 @@ justify-content: flex-start;
   cursor: pointer;
 }
 
+#searchAndSettings {
+    display: flex;
+
+}
+
+#search-icon {
+    color: white;
+}
+
+#search-button {
+    background-color: #315e9b;
+
+}
+
 .search-bar {
   width: 250px;
   padding: 5px;
@@ -93,11 +107,8 @@ h1 {
   color: #032078;
   font-family: 'Fredoka';
   font-size: 24px; 
-  margin-bottom: 20px; /* Add margin to space out heading */
-}
-
-#search-icon {
-    margin-right: 50px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #topNav {

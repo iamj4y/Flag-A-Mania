@@ -264,6 +264,14 @@ h1 {
     margin-top: 40px;
 }
 
+.submitButtons:hover {
+    color: rgb(15, 4, 224);
+}
+
+.submitButtons:active {
+    transform: translate(4px, 4px);
+}
+
 .finalConfirmation {
     display: flex;
     justify-content: center;
@@ -296,8 +304,16 @@ h1 {
     color: pink;
 }
 
+.largeButton:active {
+    transform: translate(4px, 4px);
+}
+
 .smallButton:hover {
     color: pink;
+}
+
+.smallButton:active {
+    transform: translate(4px, 4px);
 }
 
 #overlay {
