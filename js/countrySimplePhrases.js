@@ -55,12 +55,13 @@ function abbr2Title(abbr, div) {
 
 function countryPhrasePage() {
     var contentDiv= document.getElementById("phraseContents");
-    console.log(document.cookie);
     const cookies = document.cookie.split(';');
     var country = '';
 
     const divNav = document.getElementById('phrasesToggle');
     const navLinks = divNav.getElementsByTagName('a');
+    var linkArray = Array.from(navLinks);
+    console.log(linkArray);
 
     while (contentDiv.hasChildNodes()){
         contentDiv.removeChild(contentDiv.lastChild);
