@@ -5,11 +5,18 @@
     src: url('../font/Batangas Bold 700.otf');
   }
 
-body {
+html, body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     width: 100%;
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 #topNav {
@@ -17,8 +24,7 @@ body {
     font-family: 'Fredoka';
     background-color: #315e9b;
   align-items: center;
-  padding: 0 10px;
-  height: 60px;
+  padding: 10px 10px;
 }
 
 nav a {
@@ -112,8 +118,12 @@ h3 {
   font-family: 'Fredoka';
   background-color: #315e9b;
   align-items: center;
-  padding: 0 10px;
+  padding: 0;
   height: 80px;
+  bottom: 0;
+  margin-top: 2px;
+  position: relative;
+  width: 100%;
 }
 
 #bottomNav a {
