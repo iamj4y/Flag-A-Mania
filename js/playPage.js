@@ -130,7 +130,7 @@ function main(){
         
     }
 
-    function learnClick() {
+    /*function learnClick() {
         document.cookie= 'gameMode=learningMode' + ";" + "path=/"
         window.location.href = '../html/settings.html'
     }
@@ -138,7 +138,7 @@ function main(){
     function triviaClick() {
         document.cookie= 'gameMode=triviaMode' + ";" + "path=/"
         window.location.href = '../html/settings.html'
-    }
+    }*/
     
     console.log(document.cookie)
     sliderTxt.innerHTML = volumeSli.value;
@@ -149,8 +149,8 @@ function main(){
     ttsSwitch.addEventListener("click", ttsOnOff, false);
     confirmBtn.addEventListener("click", confirm);
 
-    learnBtn.addEventListener("click", learnClick);
-    triviaBtn.addEventListener("click", triviaClick);
+    /*learnBtn.addEventListener("click", learnClick);
+    triviaBtn.addEventListener("click", triviaClick);*/
 }
 
 window.addEventListener("click", main, false);
