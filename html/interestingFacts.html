@@ -1,9 +1,39 @@
-<html>
-  <head>
-    <title>Home | Flag-A-Mania</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
+<!--Uses code from "https://www.geeksforgeeks.org/create-a-qr-code-scanner-or-reader-in-html-css-javascript/#" using html5-qrcode to make QR scanner-->
 
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="../css/styleIF.css">
+    <title>Interesting Facts | Flag-A-Mania</title>
+</head>
+
+<body>
+  <header>
+    <nav id="topNav">
+      <!--NOT COMPLETE-->
+      <a href="./index.html"><img src="../img/logo2.png"  id="logo"></a>
+        <a href="./play.html" class="navlink">Play</a>
+        <a href="./interestingFacts.html" class="navlink">Interesting Facts (AR Mode)</a>
+
+        <img src="../img/icons/brightness.png" alt="Brightness" id="brightness">
+    </nav>
+  </header><br>
+    <div class="container">
+        <h1>Scan QR Codes</h1>
+        <div class="section">
+            <div id="my-qr-reader">
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="../js/cameraIF.js"></script>
+</body>
+
 </html>
