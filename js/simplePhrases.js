@@ -14,5 +14,6 @@ function startScript() {
           window.location.href = '../html/countrySimplePhrases.html';
         });
     });
+  }
 
 window.addEventListener("load", startScript, false);
