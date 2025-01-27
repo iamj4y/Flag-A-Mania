@@ -51,6 +51,10 @@ function main(){
     var volumeSli = document.getElementById('volumeSlider');
     var sliderTxt = document.getElementById("sliderTxt");
     var ttsSwitch = document.getElementById('tts');
+
+    var triviaBtn = document.getElementById('triviaMode');
+    var learnBtn = document.getElementById('learningMode');
+    
     const confirmBtn = document.getElementById('confirmButton');
 
     function confirm(event) {
@@ -125,6 +129,16 @@ function main(){
         }
         
     }
+
+    function learnClick() {
+        document.cookie= 'gameMode=learningMode' + ";" + "path=/"
+        window.location.href = '../html/settings.html'
+    }
+
+    function triviaClick() {
+        document.cookie= 'gameMode=triviaMode' + ";" + "path=/"
+        window.location.href = '../html/settings.html'
+    }
     
     console.log(document.cookie)
     sliderTxt.innerHTML = volumeSli.value;
@@ -134,6 +148,9 @@ function main(){
     volumeSli.addEventListener("input", sliderChange, true);
     ttsSwitch.addEventListener("click", ttsOnOff, false);
     confirmBtn.addEventListener("click", confirm);
+
+    learnBtn.addEventListener("click", learnClick);
+    triviaBtn.addEventListener("click", triviaClick);
 }
 
 window.addEventListener("click", main, false);
