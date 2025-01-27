@@ -119,16 +119,17 @@ function main(){
 
     }
 
-     function ttsOnOff() {
+    function ttsOnOff() {
         if (ttsSwitch.value === "on") {
-            ttsSwitch.value = false;
+            ttsSwitch.value = "off";
             ttsSwitch.innerHTML = "OFF"
-        } else {
-            ttsSwitch.value = true;
+        } else if (ttsSwitch.value = "off") {
+            ttsSwitch.value = "on";
             ttsSwitch.innerHTML = "ON"
         }
-        
     }
+        
+    
 
     /*function learnClick() {
         document.cookie= 'gameMode=learningMode' + ";" + "path=/"
@@ -146,11 +147,11 @@ function main(){
         sliderTxt.innerHTML = this.value;
     }    
     volumeSli.addEventListener("input", sliderChange, true);
-    ttsSwitch.addEventListener("click", ttsOnOff, false);
+    ttsSwitch.addEventListener("click", ttsOnOff);
     confirmBtn.addEventListener("click", confirm);
 
     /*learnBtn.addEventListener("click", learnClick);
     triviaBtn.addEventListener("click", triviaClick);*/
 }
 
-window.addEventListener("click", main, false);
+window.addEventListener("load", main, false);
