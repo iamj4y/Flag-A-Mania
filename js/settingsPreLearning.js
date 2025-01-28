@@ -2,11 +2,13 @@ function settingsThing(){
     const confirmBtn = document.getElementById("confirmButton");
     const cancelBtn = document.getElementById("cancelButton");
 
-    function clickConfirm() {
+    function clickConfirm(event) {
+        event.preventDefault();
         window.location.href = '../html/learningMode.html';
     }
 
     function clickCancel() {
+        event.preventDefault();
         window.location.href = '../html/play.html';
     }
 
