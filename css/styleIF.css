@@ -1,14 +1,18 @@
-/* style.css file*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Batangas';
+    src: url('../font/Batangas Bold 700.otf');
+  }
+
 body {
-    display: flex;
-    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    height: 100vh;
-    box-sizing: border-box;
-    text-align: center;
     background: white;
 }
+
 .container {
     width: 100%;
     max-width: 500px;
@@ -71,11 +75,16 @@ video {
     border-radius: 0.25em;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+#logo {
+    width: 100px;
+    padding-left: 5px;
+}
+
+#topNav {
     display: flex;
-  justify-content: flex-start;
-    align-items: center;
-  }
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+  align-items: center;
+  padding: 0 10px;
+  height: 60px;
+}
