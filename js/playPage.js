@@ -30,6 +30,8 @@ function main(){
     
     const confirmBtn = document.getElementById('confirmButton');
 
+    const learningConfirmButton = document.getElementById('learningConfirmButton');
+
     
 
     function triviaClick() {
@@ -83,27 +85,7 @@ function main(){
         }
     }
 
-    function triviaConfirm(event) {
-        event.preventDefault();
-        
-        var sec = timerDur.value;
-        var rounds = roundAmt.value;
-        var volume = volumeSli.value;
-        var TTStf = ttsSwitch.value;
-        
-        console.log(sec);
-        document.cookie = `timerSet=${sec}` + ";" + "path=/"
-        document.cookie = `roundAmt=${rounds}` + ";" + "path=/";
-        document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
-        document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
-
-        settingsSaved.style.display = "block";
-
-        settingsSaved.className = "";
-
-        setTimeout(savedReset, 2000)
-
-        function wavyAnimation(text) {
+    function wavyAnimation(text) {
 
         let delay = 100;
 
@@ -127,6 +109,27 @@ function main(){
 
 
     }
+
+    function triviaConfirm(event) {
+        event.preventDefault();
+        
+        var sec = timerDur.value;
+        var rounds = roundAmt.value;
+        var volume = volumeSli.value;
+        var TTStf = ttsSwitch.value;
+        
+        console.log(sec);
+        document.cookie = `timerSet=${sec}` + ";" + "path=/"
+        document.cookie = `roundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
+        document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
+
+        settingsSaved.style.display = "block";
+
+        settingsSaved.className = "";
+
+        setTimeout(savedReset, 2000)
+
 
     wavyAnimation("Settings Saved!")
 
@@ -165,6 +168,22 @@ function main(){
 
         setTimeout(savedReset, 2000)
 
+        wavyAnimation("Settings Saved!")
+
+
+        function savedReset() {
+            settingsSaved.style.display = "none";
+        }
+
+        learningSettingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
+        setTimeout(Reset, 300)
+
+        function Reset() {
+        learningSettingsBox.style.display = "none";
+        dim.style.display = "none";
+        }
+
+
     }
 
 
@@ -199,6 +218,7 @@ function main(){
     ttsSwitch.addEventListener("click", ttsOnOff);
     lTTS.addEventListener("click", lTTSOnOff);
     confirmBtn.addEventListener("click", triviaConfirm);
+    learningConfirmButton.addEventListener("click", learningConfirm);
     triviaButton.addEventListener("click", triviaClick);
     learnButton.addEventListener("click", learningClick)
 
