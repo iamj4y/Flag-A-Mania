@@ -4,7 +4,9 @@
   <head>
     <title>Play | Flag-A-Mania</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/playPage.js"></script>
+    <script src="https://kit.fontawesome.com/1f2bd98ecb.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -14,7 +16,7 @@
         <a href="./play.html" class="navlink">Play</a>
         <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
         <a href="#" class="navlink">Interesting Facts (AR Mode)</a>
-        <img src="../img/icons/brightness.png" alt="Brightness" id="brightness" width="30px">
+        <i class="fa fa-moon-o" id="darkMode"></i>
     </nav>
     <div id="settings" position="absolute">
       <!-- This is the code for the Settings pop-up boxes-->
@@ -80,8 +82,9 @@
          </a>
       </div>
     <div id="smallButtonSection">
-      <button class="smallButton"><img src="../img/icons/arrow.png" width="40px" id="arrow">Progress</button>
-      <button type="button" class="smallButton" id="settingsButton"><img src="../img/icons/gear.png" width="30px" id="gear">Settings</button>
+      <button class="smallButton"><i class="fa fa-line-chart"></i>Progress</button>
+      <button type="button" class="smallButton" id="settingsButton"><i class="fa fa-cog" id="gear"></i>
+        Settings</button>
     </div>
     </main>
     <footer id="bottomNav">

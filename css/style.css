@@ -46,15 +46,17 @@ a:hover {
     padding-left: 5px;
 }
 
-#brightness {
-    width: 40px;
-    height: 40px;
+#darkMode {
+    font-size: 40px;
     border: 2px dashed #ffffff;
     margin-right: 0;
     margin-left: auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
 
-#brightness:hover {
+#darkMode:hover {
     border: 2px solid #ffffff;
 }
 
@@ -221,14 +223,32 @@ h2 {
 }
 
 #gear {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(3px 3px 0px #222);
+   width: 30px;
+   font-size: 30px;
+}
+
+#settingsButton:hover {
+    #gear { animation: rotate 2s linear infinite;
+    }
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #arrow {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(3px 3px 0px #222);
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 /* Elements for settings */
 
