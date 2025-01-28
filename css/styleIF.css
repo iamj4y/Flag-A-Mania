@@ -75,16 +75,38 @@ video {
     border-radius: 0.25em;
 }
 
-#logo {
-    width: 100px;
-    padding-left: 5px;
-}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    height: 5%;
+  }
 
-#topNav {
+  #topNav {
     display: flex;
     font-family: 'Fredoka';
     background-color: #315e9b;
   align-items: center;
-  padding: 0 10px;
-  height: 60px;
+  padding: 10px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navlink {
+    margin-left: 20px;
+}
+
+a:hover {
+    color: pink;
+}
+
+#logo {
+    width: 100px;
+    padding-left: 5px;
 }
