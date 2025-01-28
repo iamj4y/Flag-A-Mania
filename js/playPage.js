@@ -21,6 +21,12 @@ function main(){
     var sliderTxt = document.getElementById("sliderTxt");
     var ttsSwitch = document.getElementById('tts');
 
+    var lTimerDur = document.getElementById('learningTimer');
+    var lRoundAmt = document.getElementById('learningRounds');
+    var lVolumeSli = document.getElementById('learningVolumeSlider');
+    var lSliderTxt = document.getElementById('learningSliderTxt');
+    var lTTS = document.getElementById('learningTTS');
+
     
     const confirmBtn = document.getElementById('confirmButton');
 
@@ -139,16 +145,48 @@ function main(){
 
     }
 
+    function learningConfirm(event) {
+        event.preventDefault();
+        
+        var sec = lTimerDur.value;
+        var rounds = lRoundAmt.value;
+        var volume = lVolumeSli.value;
+        var TTStf = lTTS.value;
+        
+        console.log(sec);
+        document.cookie = `lTimerSet=${sec}` + ";" + "path=/"
+        document.cookie = `lRoundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `lVolumeAmt=${volume}` + ";" + "path=/";
+        document.cookie = `lTTS=${TTStf}` + ";" + "path=/";
+
+        settingsSaved.style.display = "block";
+
+        settingsSaved.className = "";
+
+        setTimeout(savedReset, 2000)
+
+    }
+
+
     function ttsOnOff() {
         if (ttsSwitch.value === "on") {
             ttsSwitch.value = "off";
             ttsSwitch.innerHTML = "OFF"
-        } else if (ttsSwitch.value = "off") {
+        } else if (ttsSwitch.value === "off") {
             ttsSwitch.value = "on";
             ttsSwitch.innerHTML = "ON"
         }
     }
-        
+    
+    function lTTSOnOff() {
+        if (lTTS.value === "on") {
+            lTTS.value = "off";
+            lTTS.innerHTML = "OFF"
+        } else if (lTTS.value === "off") {
+            lTTS.value = "on";
+            lTTS.innerHTML = "ON"
+        }
+    }
     
     
     
@@ -159,6 +197,7 @@ function main(){
     }    
     volumeSli.addEventListener("input", sliderChange, true);
     ttsSwitch.addEventListener("click", ttsOnOff);
+    lTTS.addEventListener("click", lTTSOnOff);
     confirmBtn.addEventListener("click", triviaConfirm);
     triviaButton.addEventListener("click", triviaClick);
     learnButton.addEventListener("click", learningClick)
