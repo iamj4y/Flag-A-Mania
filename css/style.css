@@ -293,11 +293,8 @@ button:hover {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    z-index: 1100;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    display: none;
+    margin: 0px 10px 0px 100px;
+}
 }
 
 .horizontalSettings {
