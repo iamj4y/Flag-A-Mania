@@ -427,3 +427,124 @@ button:hover {
         opacity: 0;
     }
 }
+ #quizContainer {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+  }
+/* Options Grid in trivia.html */
+#optionsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    margin:15px;
+    background-color: white;
+    height:50%;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: 2px solid #315e9b;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.3s;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .option img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+  }
+  
+  .option:hover {
+    transform: scale(1.05);
+    border-color: #315e9b;
+  }
+
+ 
+  
+  /* Progress Bar */
+  #progressBarContainer {
+    width: 100%;
+    height: 5%;
+    background-color: #e0e0e0;
+    position: relative;
+  }
+  
+  #progressBar {
+    width: 70%; /* Adjust dynamically with JavaScript */
+    height: 100%;
+    background-color: #315e9b;
+    transition: width 0.5s;
+  }
+  
+  /* Header Section */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    height: 5%;
+  }
+  
+  #score {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #pauseButton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  /* Question Section */
+  #questionContainer {
+    padding: 20px 15px;
+    height:8%;
+  }
+  
+  #question {
+    font-size: 32px;
+    font-weight: bold;
+    color: #032078;
+  }
+  
+  /* Timer Bar */
+  #timerBarContainer {
+    width: 100%;
+    height: 5%;
+    background-color: #e0e0e0;
+  }
+  
+  #timerBar {
+    width: 90%; /* Adjust dynamically with JavaScript */
+    height: 100%;
+    background-color: #315e9b;
+    transition: width 0.5s linear;
+  }
+  
+  /* Time Remaining */
+  #timeLeft {
+    font-size: 14px;
+    color: #555;
+    text-align: right;
+    padding: 5px 10px;
+  }
+  
