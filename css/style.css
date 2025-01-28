@@ -212,14 +212,13 @@ h2 {
     justify-content: center;
 }
 
-#play {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(7px 7px 0px #222);
+#playIcon {
+    font-size: 90px;
+
 }
 
 #lightbulb {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(3px 3px 0px #222);
+    font-size: 90px;
 }
 
 #gear {
@@ -234,11 +233,6 @@ h2 {
 
 button:hover {
     cursor: pointer;
-}
-
-#arrow {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(3px 3px 0px #222);
 }
 
 @keyframes rotate {
@@ -311,7 +305,7 @@ button:hover {
     background-color: white;
     color: #032078;
     width: 130px;
-    height: 50px;
+    height: 70px;
     border-radius: 6px;
     border-style: solid;
     border-color: black;
