@@ -9,11 +9,9 @@ function main(){
 
     const settingsSaved = document.getElementById("settingsSaved");
 
-    settingsButton.addEventListener("click", settingsClick);
+    
 
-    settingsCancel.addEventListener("click", cancelClick);
-
-    function settingsClick() {
+    function triviaClick() {
         settingsBox.style.display = "block";
         dim.style.display = "block";
         settingsBox.style.animation = "zoomIn 0.3s ease-out forwards";
@@ -52,8 +50,10 @@ function main(){
     var sliderTxt = document.getElementById("sliderTxt");
     var ttsSwitch = document.getElementById('tts');
 
-    var triviaBtn = document.getElementById('triviaMode');
-    var learnBtn = document.getElementById('learningMode');
+    const triviaButton = document.getElementById('triviaMode');
+    const learnButton = document.getElementById('learningMode');
+
+    const progressButton = document.getElementById('progressButton')
     
     const confirmBtn = document.getElementById('confirmButton');
 
@@ -130,16 +130,7 @@ function main(){
     }
         
     
-
-    function learnClick() {
-        document.cookie= 'gameMode=learningMode' + ";" + "path=/"
-        window.location.href = '../html/settingsLearningMode.html'
-    }
-
-    function triviaClick() {
-        document.cookie= 'gameMode=triviaMode' + ";" + "path=/"
-        window.location.href = '../html/settings.html'
-    }
+    
     
     console.log(document.cookie)
     sliderTxt.innerHTML = volumeSli.value;
@@ -150,8 +141,12 @@ function main(){
     ttsSwitch.addEventListener("click", ttsOnOff);
     confirmBtn.addEventListener("click", confirm);
 
-    learnBtn.addEventListener("click", learnClick);
-    triviaBtn.addEventListener("click", triviaClick);
+    settingsCancel.addEventListener("click", cancelClick);
+    settingsButton.addEventListener("click", triviaClick);
+
+    learnButton.addEventListener("click", learnClick);
+    triviaButton.addEventListener("click", triviaClick);
+    progressButton.addEventListener("click", triviaClick);
 }
 
 window.addEventListener("load", main, false);
