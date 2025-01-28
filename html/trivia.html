@@ -1,13 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trivia Mode | Flag-A-Mania</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <main>
-      <h1>Welcome to Trivia Mode!</h1>
-      <!-- Add your trivia quiz functionality here -->
-    </main>
+    <div id="quizContainer">
+      <!-- Progress Bar -->
+      <div id="progressBarContainer">
+        <div id="progressBar"></div>
+      </div>
+
+      <!-- Score and Pause -->
+      <div id="header">
+        <p id="score">Score: 500</p>
+        <button id="pauseButton">||</button>
+      </div>
+
+      <!-- Question -->
+      <div id="questionContainer">
+        <h1 id="question">Bahamas</h1>
+      </div>
+
+      <!-- Options Grid -->
+      <div id="optionsContainer">
+        <button class="option">
+          <img src="../img/flag/us.svg" alt="Flag 1">
+        </button>
+        <button class="option">
+          <img src="../img/flag/co.svg" alt="Flag 2">
+        </button>
+        <button class="option">
+          <img src="../img/flag/bz.svg" alt="Flag 3">
+        </button>
+        <button class="option">
+          <img src="../img/flag/bs.svg" alt="Flag 4">
+        </button>
+      </div>
+
+      <!-- Timer -->
+      <div id="timerBarContainer">
+        <div id="timerBar"></div>
+      </div>
+      <p id="timeLeft">00:18</p>
+    </div>
   </body>
 </html>

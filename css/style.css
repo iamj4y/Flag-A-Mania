@@ -427,3 +427,32 @@ button:hover {
         opacity: 0;
     }
 }
+
+/* Options Grid in trivia.html */
+#optionsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .option {
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.3s;
+  }
+  
+  .option img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .option:hover {
+    transform: scale(1.05);
+    border-color: #0056b3;
+  }
+  
