@@ -1,28 +1,42 @@
-<!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Learning Mode | Flag-A-Mania</title>
-    <link rel="stylesheet" href="../css/quizStyle.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="../js/learningGame.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <div id="topSection">
-      <div class="w3-border" style="width:60%;margin:20px;">
-        <div class="w3-blue" style="height:30px;width:20%;"></div>
+    <div id="quizContainer">
+      <!-- Progress Bar -->
+      <div id="progressBarContainer">
+        <div id="progressBar"></div>
       </div>
-      <button type="button" class="pauseButton">[||]</button>
-    </div>
-    <div id="mainSection">
-      <h2></h2>
-      <button type="button" class="choiceButton" id="choice1"></button>
-      <button type="button" class="choiceButton" id="choice2"></button>
-      <button type="button" class="choiceButton" id="choice3"></button>
-      <button type="button" class="choiceButton" id="choice4"></button>
-    </div>
-    <div id="bottomSection">
+
+      <!-- Score and Pause -->
+      <div id="header">
+        <p id="score">Score: 500</p>
+        <button id="pauseButton">||</button>
       </div>
-    </div>
+
+      <!-- Question -->
+      <div id="questionContainer">
+        <h1 id="question">Bahamas</h1>
+      </div>
+
+      <!-- Options Grid -->
+      <div id="optionsContainer">
+        <button class="option">
+          <img src="../img/flag/us.svg" alt="Flag 1">
+        </button>
+        <button class="option">
+          <img src="../img/flag/co.svg" alt="Flag 2">
+        </button>
+        <button class="option">
+          <img src="../img/flag/bz.svg" alt="Flag 3">
+        </button>
+        <button class="option">
+          <img src="../img/flag/bs.svg" alt="Flag 4">
+        </button>
+      </div>
   </body>
 </html>
