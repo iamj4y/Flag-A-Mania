@@ -110,3 +110,13 @@ a:hover {
     width: 100px;
     padding-left: 5px;
 }
+
+#darkMode {
+    font-size: 40px;
+    border: 2px dashed #ffffff;
+    margin-right: 0;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
