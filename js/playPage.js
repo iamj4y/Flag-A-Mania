@@ -1,13 +1,28 @@
 function main(){
     const settingsBox = document.getElementById("triviaSettingsBox");
 
+    const learningSettingsBox = document.getElementById("learningSettingsBox");
+
     const dim = document.getElementById("overlay");
 
-    const settingsButton = document.getElementById("settingsButton");
+    const triviaButton = document.getElementById("triviaMode");
+
+    const learnButton = document.getElementById('learningMode');
 
     const settingsCancel = document.getElementById("cancelButton");
 
+    const learningCancel = document.getElementById("learningCancelButton");
+
     const settingsSaved = document.getElementById("settingsSaved");
+
+    var timerDur = document.getElementById('timer');
+    var roundAmt = document.getElementById('rounds');
+    var volumeSli = document.getElementById('volumeSlider');
+    var sliderTxt = document.getElementById("sliderTxt");
+    var ttsSwitch = document.getElementById('tts');
+
+    
+    const confirmBtn = document.getElementById('confirmButton');
 
     
 
@@ -34,6 +49,12 @@ function main(){
 
     }
 
+    function learningClick() {
+        learningSettingsBox.style.display = "block";
+        dim.style.display = "block";
+        learningSettingsBox.style.animation = "zoomIn 0.3s ease-out forwards";
+    }
+
     function cancelClick() {
         settingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
 
@@ -44,20 +65,19 @@ function main(){
         dim.style.display = "none";
         }
     }
-    var timerDur = document.getElementById('timer');
-    var roundAmt = document.getElementById('rounds');
-    var volumeSli = document.getElementById('volumeSlider');
-    var sliderTxt = document.getElementById("sliderTxt");
-    var ttsSwitch = document.getElementById('tts');
 
-    const triviaButton = document.getElementById('triviaMode');
-    const learnButton = document.getElementById('learningMode');
+    function learningCancelClick() {
+        learningSettingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
 
-    const progressButton = document.getElementById('progressButton')
-    
-    const confirmBtn = document.getElementById('confirmButton');
+        setTimeout(Reset, 300)
 
-    function confirm(event) {
+        function Reset() {
+        settingsBox.style.display = "none";
+        dim.style.display = "none";
+        }
+    }
+
+    function triviaConfirm(event) {
         event.preventDefault();
         
         var sec = timerDur.value;
@@ -139,14 +159,16 @@ function main(){
     }    
     volumeSli.addEventListener("input", sliderChange, true);
     ttsSwitch.addEventListener("click", ttsOnOff);
-    confirmBtn.addEventListener("click", confirm);
+    confirmBtn.addEventListener("click", triviaConfirm);
+    triviaButton.addEventListener("click", triviaClick);
+    learnButton.addEventListener("click", learningClick)
 
     settingsCancel.addEventListener("click", cancelClick);
-    settingsButton.addEventListener("click", triviaClick);
+
+    learningCancel.addEventListener("click", learningCancelClick);
 
     learnButton.addEventListener("click", learnClick);
-    triviaButton.addEventListener("click", triviaClick);
-    progressButton.addEventListener("click", triviaClick);
+
 }
 
 window.addEventListener("load", main, false);
