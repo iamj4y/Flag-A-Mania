@@ -293,7 +293,7 @@ button:hover {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    margin: 0px 10px 0px 100px;
+    margin: 0px auto;
 }
 }
 
@@ -352,7 +352,7 @@ button:hover {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    margin: 0px 10px 0px 100px;
+    margin: 0px auto;
 
 }
 
