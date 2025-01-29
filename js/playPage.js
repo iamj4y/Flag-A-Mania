@@ -226,8 +226,6 @@ function main(){
 
     learningCancel.addEventListener("click", learningCancelClick);
 
-    learnButton.addEventListener("click", learnClick);
-
 }
 
 window.addEventListener("load", main, false);
