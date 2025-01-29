@@ -575,3 +575,8 @@ button:hover {
     margin: 0px auto;
     margin-top:20px;
  }
+
+ .dark-mode {
+    background-color: #121212;
+    color: white;
+}
