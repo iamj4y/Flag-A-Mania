@@ -616,7 +616,15 @@ button:hover {
   }
 
  .dark-mode {
-    background-color: #121212;
+    background-color: #282828;
     color: white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
 }
 
