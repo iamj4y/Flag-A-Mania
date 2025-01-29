@@ -1,19 +1,40 @@
 function main(){
     const settingsBox = document.getElementById("triviaSettingsBox");
 
+    const learningSettingsBox = document.getElementById("learningSettingsBox");
+
     const dim = document.getElementById("overlay");
 
-    const settingsButton = document.getElementById("settingsButton");
+    const triviaButton = document.getElementById("triviaMode");
+
+    const learnButton = document.getElementById('learningMode');
 
     const settingsCancel = document.getElementById("cancelButton");
 
+    const learningCancel = document.getElementById("learningCancelButton");
+
     const settingsSaved = document.getElementById("settingsSaved");
 
-    settingsButton.addEventListener("click", settingsClick);
+    var timerDur = document.getElementById('timer');
+    var roundAmt = document.getElementById('rounds');
+    var volumeSli = document.getElementById('volumeSlider');
+    var sliderTxt = document.getElementById("sliderTxt");
+    var ttsSwitch = document.getElementById('tts');
 
-    settingsCancel.addEventListener("click", cancelClick);
+    var lTimerDur = document.getElementById('learningTimer');
+    var lRoundAmt = document.getElementById('learningRounds');
+    var lVolumeSli = document.getElementById('learningVolumeSlider');
+    var lSliderTxt = document.getElementById('learningSliderTxt');
+    var lTTS = document.getElementById('learningTTS');
 
-    function settingsClick() {
+    
+    const confirmBtn = document.getElementById('confirmButton');
+
+    const learningConfirmButton = document.getElementById('learningConfirmButton');
+
+    
+
+    function triviaClick() {
         settingsBox.style.display = "block";
         dim.style.display = "block";
         settingsBox.style.animation = "zoomIn 0.3s ease-out forwards";
@@ -36,6 +57,12 @@ function main(){
 
     }
 
+    function learningClick() {
+        learningSettingsBox.style.display = "block";
+        dim.style.display = "block";
+        learningSettingsBox.style.animation = "zoomIn 0.3s ease-out forwards";
+    }
+
     function cancelClick() {
         settingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
 
@@ -46,38 +73,19 @@ function main(){
         dim.style.display = "none";
         }
     }
-    var timerDur = document.getElementById('timer');
-    var roundAmt = document.getElementById('rounds');
-    var volumeSli = document.getElementById('volumeSlider');
-    var sliderTxt = document.getElementById("sliderTxt");
-    var ttsSwitch = document.getElementById('tts');
 
-    var triviaBtn = document.getElementById('triviaMode');
-    var learnBtn = document.getElementById('learningMode');
-    
-    const confirmBtn = document.getElementById('confirmButton');
+    function learningCancelClick() {
+        learningSettingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
 
-    function confirm(event) {
-        event.preventDefault();
-        
-        var sec = timerDur.value;
-        var rounds = roundAmt.value;
-        var volume = volumeSli.value;
-        var TTStf = ttsSwitch.value;
-        
-        console.log(sec);
-        document.cookie = `timerSet=${sec}` + ";" + "path=/"
-        document.cookie = `roundAmt=${rounds}` + ";" + "path=/";
-        document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
-        document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
+        setTimeout(Reset, 300)
 
-        settingsSaved.style.display = "block";
+        function Reset() {
+        settingsBox.style.display = "none";
+        dim.style.display = "none";
+        }
+    }
 
-        settingsSaved.className = "";
-
-        setTimeout(savedReset, 2000)
-
-        function wavyAnimation(text) {
+    function wavyAnimation(text) {
 
         let delay = 100;
 
@@ -102,6 +110,27 @@ function main(){
 
     }
 
+    function triviaConfirm(event) {
+        event.preventDefault();
+        
+        var sec = timerDur.value;
+        var rounds = roundAmt.value;
+        var volume = volumeSli.value;
+        var TTStf = ttsSwitch.value;
+        
+        console.log(sec);
+        document.cookie = `timerSet=${sec}` + ";" + "path=/"
+        document.cookie = `roundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
+        document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
+
+        settingsSaved.style.display = "block";
+
+        settingsSaved.className = "";
+
+        setTimeout(savedReset, 2000)
+
+
     wavyAnimation("Settings Saved!")
 
 
@@ -119,27 +148,66 @@ function main(){
 
     }
 
+    function learningConfirm(event) {
+        event.preventDefault();
+        
+        var sec = lTimerDur.value;
+        var rounds = lRoundAmt.value;
+        var volume = lVolumeSli.value;
+        var TTStf = lTTS.value;
+        
+        console.log(sec);
+        document.cookie = `lTimerSet=${sec}` + ";" + "path=/"
+        document.cookie = `lRoundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `lVolumeAmt=${volume}` + ";" + "path=/";
+        document.cookie = `lTTS=${TTStf}` + ";" + "path=/";
+
+        settingsSaved.style.display = "block";
+
+        settingsSaved.className = "";
+
+        setTimeout(savedReset, 2000)
+
+        wavyAnimation("Settings Saved!")
+
+
+        function savedReset() {
+            settingsSaved.style.display = "none";
+        }
+
+        learningSettingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
+        setTimeout(Reset, 300)
+
+        function Reset() {
+        learningSettingsBox.style.display = "none";
+        dim.style.display = "none";
+        }
+
+
+    }
+
+
     function ttsOnOff() {
         if (ttsSwitch.value === "on") {
             ttsSwitch.value = "off";
             ttsSwitch.innerHTML = "OFF"
-        } else if (ttsSwitch.value = "off") {
+        } else if (ttsSwitch.value === "off") {
             ttsSwitch.value = "on";
             ttsSwitch.innerHTML = "ON"
         }
     }
-        
     
-
-    function learnClick() {
-        document.cookie= 'gameMode=learningMode' + ";" + "path=/"
-        window.location.href = '../html/settingsLearningMode.html'
+    function lTTSOnOff() {
+        if (lTTS.value === "on") {
+            lTTS.value = "off";
+            lTTS.innerHTML = "OFF"
+        } else if (lTTS.value === "off") {
+            lTTS.value = "on";
+            lTTS.innerHTML = "ON"
+        }
     }
-
-    function triviaClick() {
-        document.cookie= 'gameMode=triviaMode' + ";" + "path=/"
-        window.location.href = '../html/settings.html'
-    }
+    
+    
     
     console.log(document.cookie)
     sliderTxt.innerHTML = volumeSli.value;
@@ -148,10 +216,18 @@ function main(){
     }    
     volumeSli.addEventListener("input", sliderChange, true);
     ttsSwitch.addEventListener("click", ttsOnOff);
-    confirmBtn.addEventListener("click", confirm);
+    lTTS.addEventListener("click", lTTSOnOff);
+    confirmBtn.addEventListener("click", triviaConfirm);
+    learningConfirmButton.addEventListener("click", learningConfirm);
+    triviaButton.addEventListener("click", triviaClick);
+    learnButton.addEventListener("click", learningClick)
 
-    learnBtn.addEventListener("click", learnClick);
-    triviaBtn.addEventListener("click", triviaClick);
+    settingsCancel.addEventListener("click", cancelClick);
+
+    learningCancel.addEventListener("click", learningCancelClick);
+
+    learnButton.addEventListener("click", learnClick);
+
 }
 
 window.addEventListener("load", main, false);

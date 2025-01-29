@@ -212,14 +212,13 @@ h2 {
     justify-content: center;
 }
 
-#play {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(7px 7px 0px #222);
+#playIcon {
+    font-size: 90px;
+
 }
 
 #lightbulb {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(3px 3px 0px #222);
+    font-size: 90px;
 }
 
 #gear {
@@ -236,11 +235,6 @@ button:hover {
     cursor: pointer;
 }
 
-#arrow {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(3px 3px 0px #222);
-}
-
 @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -252,7 +246,7 @@ button:hover {
 
 /* Elements for settings */
 
-#triviah1 {
+.settingsh1 {
     color: white;
 }
 
@@ -293,7 +287,7 @@ button:hover {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    margin: 0px auto;
+    margin: 0px 10px 0px 100px;
 }
 
 .horizontalSettings {
@@ -311,7 +305,7 @@ button:hover {
     background-color: white;
     color: #032078;
     width: 130px;
-    height: 50px;
+    height: 70px;
     border-radius: 6px;
     border-style: solid;
     border-color: black;
@@ -351,7 +345,10 @@ button:hover {
     align-items: left;
     flex-direction: column;
     text-shadow: 3px 3px black;
-    margin: 0px auto;
+    z-index: 1100;
+    top: 50%;
+    left: 50%;
+    display: none;
 
 }
 
