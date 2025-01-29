@@ -225,8 +225,13 @@ function main(){
     sliderTxt.innerHTML = volumeSli.value;
     function sliderChange() {
         sliderTxt.innerHTML = this.value;
-    }    
+    }
+    lSliderTxt.innerHTML = lVolumeSli.value;
+    function lSliderChange() {
+        lSliderTxt.innerHTML = this.value;
+    }  
     volumeSli.addEventListener("input", sliderChange, true);
+    lVolumeSli.addEventListener("input", lSliderChange, true)
     ttsSwitch.addEventListener("click", ttsOnOff);
     lTTS.addEventListener("click", lTTSOnOff);
     confirmBtn.addEventListener("click", triviaConfirm);
