@@ -77,19 +77,27 @@ h3 {
 
 #startPlaying {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #listSection {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #infoRow {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #aboutUsSection {
     display: flex;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 
