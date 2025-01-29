@@ -130,16 +130,10 @@ function main(){
 
         settingsSaved.className = "";
 
-        setTimeout(savedReset, 2000);
         setTimeout(triviaLink, 2100);
 
 
     wavyAnimation("Settings Saved!")
-
-
-        function savedReset() {
-            settingsSaved.style.display = "none";
-        }
 
         settingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
         setTimeout(Reset, 300)
@@ -173,15 +167,10 @@ function main(){
 
         settingsSaved.className = "";
 
-        setTimeout(savedReset, 2000)
         setTimeout(learningLink, 2100);
 
         wavyAnimation("Settings Saved!")
 
-
-        function savedReset() {
-            settingsSaved.style.display = "none";
-        }
 
         learningSettingsBox.style.animation = "zoomOut 0.3s ease-in forwards";
         setTimeout(Reset, 300)
