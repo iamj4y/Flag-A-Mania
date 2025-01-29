@@ -1,0 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const darkModeToggle = document.getElementById("darkMode");
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        darkModeToggle.classList.replace("fa-moon-o", "fa-sun-o");
+
+    }
+
+    darkModeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+            darkModeToggle.classList.replace("fa-moon-o", "fa-sun-o");
+        
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+            darkModeToggle.classList.replace("fa-sun-o", "fa-moon-o");
+        }
+    });
+});
