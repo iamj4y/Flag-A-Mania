@@ -77,19 +77,27 @@ h3 {
 
 #startPlaying {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #listSection {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #infoRow {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #aboutUsSection {
     display: flex;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -616,7 +624,15 @@ button:hover {
   }
 
  .dark-mode {
-    background-color: #121212;
+    background-color: #282828;
     color: white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
 }
 
