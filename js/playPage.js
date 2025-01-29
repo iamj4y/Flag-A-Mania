@@ -15,6 +15,8 @@ function main(){
 
     const settingsSaved = document.getElementById("settingsSaved");
 
+    const mainContent = document.getElementById("mainContent");
+
     var timerDur = document.getElementById('timer');
     var roundAmt = document.getElementById('rounds');
     var volumeSli = document.getElementById('volumeSlider');
@@ -104,7 +106,7 @@ function main(){
 
       const totalWavyDuration = 0.6 * 1000 + delay + text.length * 60;
     setTimeout(() => {
-        settingsSaved.classList.add("fade-out"); // 
+        mainContent.classList.add("fade-out"); // 
     }, totalWavyDuration);
 
 
@@ -128,7 +130,8 @@ function main(){
 
         settingsSaved.className = "";
 
-        setTimeout(savedReset, 2000)
+        setTimeout(savedReset, 2000);
+        setTimeout(triviaLink, 2100);
 
 
     wavyAnimation("Settings Saved!")
@@ -144,6 +147,10 @@ function main(){
         function Reset() {
         settingsBox.style.display = "none";
         dim.style.display = "none";
+        }
+
+        function triviaLink() {
+            window.location.href = "trivia.html";
         }
 
     }
@@ -167,6 +174,7 @@ function main(){
         settingsSaved.className = "";
 
         setTimeout(savedReset, 2000)
+        setTimeout(learningLink, 2100);
 
         wavyAnimation("Settings Saved!")
 
@@ -181,6 +189,10 @@ function main(){
         function Reset() {
         learningSettingsBox.style.display = "none";
         dim.style.display = "none";
+        }
+
+        function learningLink() {
+            window.location.href = "learningMode.html";
         }
 
 
@@ -213,8 +225,13 @@ function main(){
     sliderTxt.innerHTML = volumeSli.value;
     function sliderChange() {
         sliderTxt.innerHTML = this.value;
-    }    
+    }
+    lSliderTxt.innerHTML = lVolumeSli.value;
+    function lSliderChange() {
+        lSliderTxt.innerHTML = this.value;
+    }  
     volumeSli.addEventListener("input", sliderChange, true);
+    lVolumeSli.addEventListener("input", lSliderChange, true)
     ttsSwitch.addEventListener("click", ttsOnOff);
     lTTS.addEventListener("click", lTTSOnOff);
     confirmBtn.addEventListener("click", triviaConfirm);
