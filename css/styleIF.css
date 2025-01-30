@@ -120,3 +120,16 @@ a:hover {
     text-align: center;
     padding: 5px;
 }
+
+.dark-mode {
+    background-color: #282828;
+    color:white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
+}
