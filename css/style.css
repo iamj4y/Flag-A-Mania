@@ -167,9 +167,15 @@ h2 {
 }
 
 .exit-button {
-    float: left;
-    width: 40px;
-    height: 40px;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin: 12px 40px 12px 12px;
+}
+
+.exit-button img {
+    width:32px;
+    height:32px;
 }
 
 .gameModeButton {
@@ -623,9 +629,9 @@ button:hover {
     color: #032078;
   }
 
- .dark-mode {
+.dark-mode {
     background-color: #282828;
-    color: white;
+    color:white;
 }
 
 .dark-mode h1 {
@@ -634,5 +640,14 @@ button:hover {
 
 .dark-mode h3 {
     color: #c5daf6;
+}
+
+.dark-mode #quizContainer, .dark-mode #quesionContainer, .dark-mode #optionsContainer, .dark-mode #header, .dark-mode #question{
+    background-color: #282828;
+    color: #c5daf6;
+}
+
+.dark-mode .option{
+    background-color:#575757 ;
 }
 

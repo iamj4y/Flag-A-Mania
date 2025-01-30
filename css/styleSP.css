@@ -61,4 +61,18 @@ h1 {
     color: #032078;
     font-size: 400%;
 }
+
+.dark-mode {
+    background-color: #282828;
+    color: white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
+}
+
   
