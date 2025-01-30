@@ -60,7 +60,6 @@ a:hover {
     border: 2px solid #ffffff;
 }
 
-
 p {
     font-size: medium;
 }
@@ -167,10 +166,10 @@ h2 {
 }
 
 .exit-button {
-    float: right;
-    width: 32px;
-    height: 32px;
-    margin: 12px 40px 12px 12px;
+    left: 0px;
+    margin-right: auto;
+    margin-left: 0;
+    float: left;
 }
 
 .exit-button img {
