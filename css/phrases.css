@@ -196,3 +196,21 @@ a:hover {
   #bottomNav a:hover {
       color: pink;
   }
+
+  .dark-mode {
+    background-color: #282828;
+    color: white;
+  }
+
+  .dark-mode h1{
+    color:#c5daf6;
+  }
+
+  .dark-mode p{
+    color:#c5daf6;
+  }
+
+  .dark-mode button{
+    background-color: #575757;
+    border: 2px solid #315e9b
+  }

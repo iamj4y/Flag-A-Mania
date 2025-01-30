@@ -77,19 +77,27 @@ h3 {
 
 #startPlaying {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #listSection {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #infoRow {
     display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
 #aboutUsSection {
     display: flex;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -159,9 +167,15 @@ h2 {
 }
 
 .exit-button {
-    float: left;
-    width: 40px;
-    height: 40px;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin: 12px 40px 12px 12px;
+}
+
+.exit-button img {
+    width:32px;
+    height:32px;
 }
 
 .gameModeButton {
@@ -564,3 +578,76 @@ button:hover {
     padding: 5px 10px;
   }
   
+/*Score Page*/
+ #scoreContents {
+    width: 1100px;
+    height: 700px;
+    border-radius: 5px;
+    background-color: #c5daf6;
+    padding: 10px;
+    margin: 0px auto;
+    margin-top:20px;
+ }
+
+  #scoreBanner {
+    display: block;
+    margin: 0px auto;
+  }
+
+  #scoreDetails {
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 10px;
+  }
+
+  #scoreTotal {
+    font-size: 250%;
+    color:#032078;
+    font-weight: bold;
+  }
+
+  #scoreExitButton {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #scoreExitButton > a {
+    background-color: #315e9b;
+    color:#c5daf6;
+    text-decoration: none;
+    font-size: 200%;
+    padding: 10px 30px;
+    border-radius: 6px;
+  }
+
+  .aScoreDetail {
+    font-size: 150%;
+  }
+
+  #timeInsert, #correctInsert, #incorrectInsert, #finalScoreValue {
+    float: right;
+    color: #032078;
+  }
+
+.dark-mode {
+    background-color: #282828;
+    color:white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
+}
+
+.dark-mode #quizContainer, .dark-mode #quesionContainer, .dark-mode #optionsContainer, .dark-mode #header, .dark-mode #question{
+    background-color: #282828;
+    color: #c5daf6;
+}
+
+.dark-mode .option{
+    background-color:#575757 ;
+}
+
