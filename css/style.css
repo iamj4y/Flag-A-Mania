@@ -650,3 +650,15 @@ button:hover {
     background-color:#575757 ;
 }
 
+.dark-mode #playNow{
+  background-color: #121212; 
+}
+
+.dark-mode #topNav {
+  background-color: #282828;
+}
+
+.dark-mode nav a{
+  color: #c5daf6;
+}
+
