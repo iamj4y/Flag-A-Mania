@@ -18,13 +18,13 @@ function main(){
     const mainContent = document.getElementById("mainContent");
 
     var timerDur = document.getElementById('timer');
-    var roundAmt = document.getElementById('rounds');
+    var questionAmt = document.getElementById('questions');
     var volumeSli = document.getElementById('volumeSlider');
     var sliderTxt = document.getElementById("sliderTxt");
     var ttsSwitch = document.getElementById('tts');
 
     var lTimerDur = document.getElementById('learningTimer');
-    var lRoundAmt = document.getElementById('learningRounds');
+    var lQuestionAmt = document.getElementById('learningQuestions');
     var lVolumeSli = document.getElementById('learningVolumeSlider');
     var lSliderTxt = document.getElementById('learningSliderTxt');
     var lTTS = document.getElementById('learningTTS');
@@ -116,13 +116,13 @@ function main(){
         event.preventDefault();
         
         var sec = timerDur.value;
-        var rounds = roundAmt.value;
+        var questions = questionAmt.value;
         var volume = volumeSli.value;
         var TTStf = ttsSwitch.value;
         
         console.log(sec);
         document.cookie = `timerSet=${sec}` + ";" + "path=/"
-        document.cookie = `roundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `questionAmt=${questions}` + ";" + "path=/";
         document.cookie = `volumeAmt=${volume}` + ";" + "path=/";
         document.cookie = `TTStf=${TTStf}` + ";" + "path=/";
 
@@ -153,13 +153,13 @@ function main(){
         event.preventDefault();
         
         var sec = lTimerDur.value;
-        var rounds = lRoundAmt.value;
+        var questions = lQuestionAmt.value;
         var volume = lVolumeSli.value;
         var TTStf = lTTS.value;
         
         console.log(sec);
         document.cookie = `lTimerSet=${sec}` + ";" + "path=/"
-        document.cookie = `lRoundAmt=${rounds}` + ";" + "path=/";
+        document.cookie = `lQuestionAmt=${questions}` + ";" + "path=/";
         document.cookie = `lVolumeAmt=${volume}` + ";" + "path=/";
         document.cookie = `lTTS=${TTStf}` + ";" + "path=/";
 
@@ -234,4 +234,4 @@ function main(){
 
 }
 
-window.addEventListener("load", main, false);
+document.addEventListener("DOMContentLoaded", main);
