@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var secondsLeft = 20;
-    var questionsLeft = 5;
+    var secondsLeft = 0;
+    var questionsLeft = 0;
+    var volumeSetting = 0;
+    var ttsSetting = '';
     
     const cookies = document.cookie.split(';');
     for (var cookie of cookies) {
@@ -9,7 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             secondsLeft = parseInt(refinedCookie.split("=").pop())
         } if (refinedCookie.startsWith("questionAmt=")) {
             questionsLeft = parseInt(refinedCookie.split("=").pop())
-        } 
+        }  if (refinedCookie.startsWith("volumeAmt=")) {
+            volumeSetting = parseInt(refinedCookie.split("=").pop())
+        } if (refinedCookie.startsWith("TTStf=")) {
+            ttsSetting = refinedCookie.split("=").pop()
+        }
     }
     
     var correctAns = 0;
@@ -156,3 +162,4 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
+});
