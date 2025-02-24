@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     var secondsLeft = 20;
     var questionsLeft = 5;
@@ -67,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTimer() {
-        if (secondsLeft > 0) {
+        if (secondsLeft > 1) {
             secondsLeft--;
             timerBar.style.width = `${(secondsLeft / totalTime) * 100}%`;
             timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
         } else {
-            if (questionsLeft != 0) {
+            if (questionsLeft > 0) {
                 incorrectAns ++;
                 questionsLeft--;
                 totalSeconds += totalTime;
@@ -83,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 incorrectAns ++;
                 totalSeconds += totalTime;
+                document.cookie = `finalScore=${score}` + ";" + "path=/";
                 document.cookie = `totalSeconds=${totalSeconds}` + ";" + "path=/";
                 document.cookie = `correctAnswers=${correctAns}` + ";" + "path=/";
                 document.cookie = `incorrectAnswers=${incorrectAns}` + ";" + "path=/";
@@ -101,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function checkAnswer(selectedBtn, imgSrc) {
-        if (questionsLeft !=0) {
+        if (questionsLeft != 1) {
            if (imgSrc == correctAnswer.imgURL) {
             correctAns ++;
             score = score + 100;
@@ -129,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             if (imgSrc == correctAnswer.imgURL) {
                 correctAns ++;
+                score += 100;
                 selectedBtn.style.backgroundColor = "#6ca678";      
                 setTimeout(() => {
                     selectedBtn.style.backgroundColor = "";
@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }, 400); 
             }
             totalSeconds += totalTime - secondsLeft;
+            document.cookie = `finalScore=${score}` + ";" + "path=/";
             document.cookie = `totalSeconds=${totalSeconds}` + ";" + "path=/";
             document.cookie = `correctAnswers=${correctAns}` + ";" + "path=/";
             document.cookie = `incorrectAnswers=${incorrectAns}` + ";" + "path=/";
@@ -155,4 +156,3 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
-});
