@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -5,6 +7,7 @@
     <title>Quiz Game</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/darkmode.js"></script>
+    <script src="../js/learningGame.js"></script>
   </head>
   <body>
     <div id="quizContainer">
@@ -25,23 +28,22 @@
       <!-- Question -->
       <div id="questionContainer">
         <h1 id="question">Match the Fact</h1>
-        <p>Nassau is the capital of what country?</p>
+        <p id="actualQtn">Nassau is the capital of what country?</p>
       </div>
 
       <!-- Options Grid -->
       <div id="optionsContainer">
-        <button class="option">
-          <img src="../img/flag/us.svg" alt="Flag 1">
+        <button class="option" id="1">
+          <p></p>
         </button>
-        <button class="option">
-          <img src="../img/flag/co.svg" alt="Flag 2">
+        <button class="option" id="2">
+          <p></p>
         </button>
-        <button class="option">
-          <img src="../img/flag/bz.svg" alt="Flag 3">
+        <button class="option" id="3">
+          <p></p>
         </button>
-        <button class="option">
-          <img src="../img/flag/bs.svg" alt="Flag 4">
-        </button>
+        <button class="option" id="4">
+          <p></p>
       </div>
   </body>
 </html>
