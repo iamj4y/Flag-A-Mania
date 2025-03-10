@@ -1,38 +1,40 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+    //timer
+    let secondsLeft = 20;
+    const totalTime = secondsLeft; // Store total time for reference
+    const timerBar = document.getElementById("timerBar");
+    const timeLeft = document.getElementById("timeLeft");
 
-function mainQuiz() {
-    var countrySet = [
-        {country : "us", name : "United States of America",},
-        {country : "ca", name : "Canada"},
-        {country : "mx", name : "Mexico"},
-        {country : "br", name : "Brazil"},
-        {country : "ar", name : "Argentina"},
-        {country : "co", name : "Columbia"},
-        {country : "pe", name : "Peru"},
-        {country : "cl", name : "Chile"},
-        {country : "cu", name : "Cuba"},
-        {country : "ve", name : "Venezuela"},
-        {country : "cr", name : "Costa Rica"},
-        {country : "ec", name : "Ecuador"},
-        {country : "gt", name : "Guatemala"},
-        {country : "hn", name : "Honduras"},
-        {country : "sv", name : "El Salvador"},
-        {country : "ni", name : "Nicaragua"},
-        {country : "pa", name : "Panama"},
-        {country : "ht", name : "Haiti"},
-        {country : "do", name : "Dominican Republic"},
-        {country : "jm", name : "Jamaica"},
-        {country : "bs", name : "The Bahamas"},
-        {country : "bb", name : "Barbados"},
-        {country : "tt", name : "Trinidad and Tobago"},
-        {country : "gy", name : "Guyana"},
-        {country : "sr", name : "Suriname"},
-        {country : "gf", name : "French Guiana"},
-    ]
-    var cookies = document.cookie.split(';');
-    var gameMode = '';
-    const topSection = document.getElementById('topSection');
+    if (timerBar) {
+        // Ensure timer bar starts at full width
+        timerBar.style.width = "100%";
+    }
 
-}
+    // Check if elements exist
+    if (!timerBar || !timeLeft) {
+        console.error("Timer elements not found!");
+        return; // Exit the function early if elements are missing
+    }
 
-window.addEventListener("load", mainQuiz, false);
+    function updateTimer() {
+        if (secondsLeft > 0) {
+            secondsLeft--;
+            timerBar.style.width = `${(secondsLeft / totalTime) * 100}%`;
+            timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
+        } else {
+            clearInterval(interval); // Stop the timer when it reaches 0
+             // Reset timer after 1 second
+        }
+    }
+
+    function resetTimer() {
+        secondsLeft = totalTime;
+        timerBar.style.width = "100%";
+        timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
+        interval = setInterval(updateTimer, 1000); // Restart the timer
+    }
+
+    // Start the timer interval
+    let interval = setInterval(updateTimer, 1000);
+});

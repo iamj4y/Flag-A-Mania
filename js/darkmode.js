@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("darkMode");
     const images = [
-        { id: "drawingImage", light : "../img/drawingvecto.png", dark : "../img/StudentStudyingDark.png"},
+        { id: "drawingImage", light : "../img/drawingvector.png", dark : "../img/StudentStudyingDark.png"},
         { id: "beingCreativeImage", light : "../img/Being Creative.png", dark : "../img/beingCreativeDark.png"},
         {id : "aboutUsImage", light : "../img/About Our Team.png", dark : "../img/AboutOurTeamDark.png"},
     ]
