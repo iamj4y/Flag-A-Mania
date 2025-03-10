@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var secondsLeft = 0;
     var questionsLeft = 0;
@@ -15,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             volumeSetting = parseInt(refinedCookie.split("=").pop())
         } if (refinedCookie.startsWith("TTStf=")) {
             ttsSetting = refinedCookie.split("=").pop()
-        }
-    }
+    }}
     
     var correctAns = 0;
     var incorrectAns = 0;
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function checkAnswer(selectedBtn, imgSrc) {
-        if (questionsLeft != 1) {
+        if (questionsLeft > 1) {
            if (imgSrc == correctAnswer.imgURL) {
             correctAns ++;
             score = score + 100;
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 clearInterval(interval);
                 resetTimer();
                 loadQtn();
-            }, 500)
+            }, 500);
             
         } else {
             if (imgSrc == correctAnswer.imgURL) {

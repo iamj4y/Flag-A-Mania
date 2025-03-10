@@ -489,6 +489,7 @@ button:hover {
     transition: transform 0.2s, border-color 0.3s;
     height: 100%;
     overflow: hidden;
+    transition: background-color 0.3s ease;
   }
   
   .option img {
@@ -563,7 +564,7 @@ button:hover {
   }
   
   #timerBar {
-    width: 90%; /* Adjust dynamically with JavaScript */
+    width: 100%; /* Adjust dynamically with JavaScript */
     height: 100%;
     background-color: #315e9b;
     transition: width 0.5s linear;
@@ -658,7 +659,10 @@ button:hover {
   background-color: #282828;
 }
 
+.dark-mode #timeLeft {
+  color: white;
+}
+
 .dark-mode nav a{
   color: #c5daf6;
 }
-
