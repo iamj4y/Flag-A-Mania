@@ -9,7 +9,7 @@
         $countries[] = $row;
     }
 
-    $json = json_encode($countries);
+    $choicesJSON = json_encode($countries);
 
-    echo $json;
+    echo $choicesJSON;
 ?>
