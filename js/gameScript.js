@@ -62,8 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (timerBar && progressBar) {
         // Ensure timer bar starts at full width
         timerBar.style.width = "100%";
-        progressBar.style.width = "100%";
+        progressBar.style.width = "0%";
     }
+
 
     // Check if elements exist
     if (!timerBar || !timeLeft) {
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 incorrectAns ++;
                 questionsLeft--;
                 totalSeconds += totalTime;
-                progressBar.style.width= `${(questionsLeft / questionAmt) * 100}%`;
+                progressBar.style.width= `${((questionAmt - questionsLeft) / questionAmt) * 100}%`;
                 clearInterval(interval); // Stop the timer when it reaches 0
                 resetTimer();// Reset timer after 1 second
                 loadQtn();
@@ -123,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   }, 400); 
             } 
             questionsLeft--;
-            progressBar.style.width= `${(questionsLeft / questionAmt) * 100}%`;
+            progressBar.style.width= `${((questionAmt - questionsLeft) / questionAmt) * 100}%`;
             scoreNum.textContent = score;
             totalSeconds += totalTime - secondsLeft;
             setTimeout(() => {
