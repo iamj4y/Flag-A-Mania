@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const option3 = document.getElementById("3");
     const option4 = document.getElementById("4");
 
+    const correctAudio = new Audio('../sfx/correct.mp3');
+    const incorrectAudio = new Audio('../sfx/wrong.mp3')
+
+    correctAudio.volume = volumeSetting/100;
+    incorrectAudio.volume = volumeSetting/100;
+
     var correctAnswer= [];
 
     
@@ -79,6 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
             timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
         } else {
             if (questionsLeft > 0) {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 questionsLeft--;
                 totalSeconds += totalTime;
@@ -87,6 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 resetTimer();// Reset timer after 1 second
                 loadQtn();
             } else {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 totalSeconds += totalTime;
                 document.cookie = `finalScore=${score}` + ";" + "path=/";
@@ -110,6 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkAnswer(selectedBtn, imgSrc) {
         if (questionsLeft > 1) {
            if (imgSrc == correctAnswer.imgURL) {
+            correctAudio.currentTime = 0;
+            correctAudio.play();
             correctAns ++;
             score = score + 100;
             selectedBtn.style.backgroundColor = "#6ca678";      
@@ -117,6 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 selectedBtn.style.backgroundColor = "";
               }, 400);     
             } else {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 selectedBtn.style.backgroundColor = "#a66c70";
                 setTimeout(() => {
@@ -135,6 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
             
         } else {
             if (imgSrc == correctAnswer.imgURL) {
+                correctAudio.currentTime = 0;
+                correctAudio.play();
                 correctAns ++;
                 score += 100;
                 selectedBtn.style.backgroundColor = "#6ca678";      
@@ -142,6 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     selectedBtn.style.backgroundColor = "";
                 }, 400);   
             } else {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 selectedBtn.style.backgroundColor = "#a66c70";
                 setTimeout(() => {
@@ -164,4 +182,3 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
-});
