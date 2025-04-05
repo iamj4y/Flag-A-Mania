@@ -182,3 +182,4 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
+    });
