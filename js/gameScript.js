@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 option2.querySelector("img").src = data[1].imgURL;
                 option3.querySelector("img").src = data[2].imgURL;
                 option4.querySelector("img").src = data[3].imgURL;
+
+                if (ttsSetting === 'on') {
+                    var sayQuestion = new SpeechSynthesisUtterance(countryName);
+                    sayQuestion.volume = volumeSetting/100;
+                    window.speechSynthesis.cancel();
+                    window.speechSynthesis.speak(sayQuestion);
+                }
             })
             .catch(error => console.error("Error fetching question:", error));
     }       
@@ -84,9 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
             timerBar.style.width = `${(secondsLeft / totalTime) * 100}%`;
             timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
         } else {
+            incorrectAudio.pause();
+            incorrectAudio.currentTime = 0;
+            incorrectAudio.play();
             if (questionsLeft > 0) {
-                incorrectAudio.currentTime = 0;
-                incorrectAudio.play();
                 incorrectAns ++;
                 questionsLeft--;
                 totalSeconds += totalTime;
@@ -95,8 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 resetTimer();// Reset timer after 1 second
                 loadQtn();
             } else {
-                incorrectAudio.currentTime = 0;
-                incorrectAudio.play();
                 incorrectAns ++;
                 totalSeconds += totalTime;
                 document.cookie = `finalScore=${score}` + ";" + "path=/";
@@ -182,4 +188,4 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
-    });
+});
