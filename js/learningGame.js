@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }, 400); 
             }
             document.cookie = `finalScore=${score}` + ";" + "path=/";
-            document.cookie = "totalSeconds=---" + "path=/";
+            document.cookie = "totalSeconds=---;" + "path=/";
             document.cookie = `correctAnswers=${correctAns}` + ";" + "path=/";
             document.cookie = `incorrectAnswers=${incorrectAns}` + ";" + "path=/";
             setTimeout(() => {
