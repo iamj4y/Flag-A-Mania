@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const option2 = document.getElementById("2");
     const option3 = document.getElementById("3");
     const option4 = document.getElementById("4");
+    const replayBtn = document.getElementById("Replay");
 
     const correctAudio = new Audio('../sfx/correct.mp3');
     const incorrectAudio = new Audio('../sfx/wrong.mp3')
@@ -62,6 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (progressBar) {
         // Ensure progress bar starts at full width
         progressBar.style.width = "0%";
+    }
+
+    if (ttsSetting === 'on') {
+        replayBtn.style.display = 'block';
     }
 
     function checkAnswer(selectedBtn, btnText) {
@@ -127,7 +132,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function replayFunc() {
+        var sayQuestion = new SpeechSynthesisUtterance(question.textContent);
+        sayQuestion.volume = volumeSetting/100;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(sayQuestion);
+    }
+
     loadQtn();
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("p").textContent)}, false));
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("mouseover", function() {sayChoice(this.querySelector("p").textContent)}, false))
+    replayBtn.addEventListener("click", replayFunc)
 });
