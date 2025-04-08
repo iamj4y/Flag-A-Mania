@@ -666,3 +666,7 @@ button:hover {
 .dark-mode nav a{
   color: #c5daf6;
 }
+
+.dark-mode #quizContainer #optionsContainer .option p {
+  color: #c5daf6;
+}
