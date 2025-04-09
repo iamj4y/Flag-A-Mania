@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     loadQtn();
-    optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("p").textContent)}, false));
+    optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("dblclick", function() {checkAnswer(this, this.querySelector("p").textContent)}, false));
     optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("mouseover", function() {sayChoice(this.querySelector("p").textContent)}, false))
     replayBtn.addEventListener("click", replayFunc)
 });
