@@ -547,7 +547,28 @@ button:hover {
   /* Question Section */
   #questionContainer {
     padding: 20px 15px;
-    height:8%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+  }
+
+  #textNbutton {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #Replay {
+    width: 40px;
+    height: 40px;
+    background-color: #315e9b;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: none;
+  }
+
+  #Replay:hover {
+    background-color: #032078;
   }
   
   #question {
@@ -665,4 +686,12 @@ button:hover {
 
 .dark-mode nav a{
   color: #c5daf6;
+}
+
+.dark-mode #quizContainer #optionsContainer .option p {
+  color: #c5daf6;
+}
+
+.dark-mode #scoreContents #scoreDetails p {
+  color: #282828;
 }

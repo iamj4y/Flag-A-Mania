@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const option3 = document.getElementById("3");
     const option4 = document.getElementById("4");
 
+    const correctAudio = new Audio('../sfx/correct.mp3');
+    const incorrectAudio = new Audio('../sfx/wrong.mp3')
+
+    correctAudio.volume = volumeSetting/100;
+    incorrectAudio.volume = volumeSetting/100;
+
     var correctAnswer= [];
 
     
@@ -53,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 option2.querySelector("img").src = data[1].imgURL;
                 option3.querySelector("img").src = data[2].imgURL;
                 option4.querySelector("img").src = data[3].imgURL;
+
+                if (ttsSetting === 'on') {
+                    var sayQuestion = new SpeechSynthesisUtterance(countryName);
+                    sayQuestion.volume = volumeSetting/100;
+                    window.speechSynthesis.cancel();
+                    window.speechSynthesis.speak(sayQuestion);
+                }
             })
             .catch(error => console.error("Error fetching question:", error));
     }       
@@ -62,8 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (timerBar && progressBar) {
         // Ensure timer bar starts at full width
         timerBar.style.width = "100%";
-        progressBar.style.width = "100%";
+        progressBar.style.width = "0%";
     }
+
 
     // Check if elements exist
     if (!timerBar || !timeLeft) {
@@ -77,11 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
             timerBar.style.width = `${(secondsLeft / totalTime) * 100}%`;
             timeLeft.textContent = "0:" + secondsLeft.toString().padStart(2, "0");
         } else {
+            incorrectAudio.pause();
+            incorrectAudio.currentTime = 0;
+            incorrectAudio.play();
             if (questionsLeft > 0) {
                 incorrectAns ++;
                 questionsLeft--;
                 totalSeconds += totalTime;
-                progressBar.style.width= `${(questionsLeft / questionAmt) * 100}%`;
+                progressBar.style.width= `${((questionAmt - questionsLeft) / questionAmt) * 100}%`;
                 clearInterval(interval); // Stop the timer when it reaches 0
                 resetTimer();// Reset timer after 1 second
                 loadQtn();
@@ -109,6 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkAnswer(selectedBtn, imgSrc) {
         if (questionsLeft > 1) {
            if (imgSrc == correctAnswer.imgURL) {
+            correctAudio.currentTime = 0;
+            correctAudio.play();
             correctAns ++;
             score = score + 100;
             selectedBtn.style.backgroundColor = "#6ca678";      
@@ -116,6 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 selectedBtn.style.backgroundColor = "";
               }, 400);     
             } else {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 selectedBtn.style.backgroundColor = "#a66c70";
                 setTimeout(() => {
@@ -123,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   }, 400); 
             } 
             questionsLeft--;
-            progressBar.style.width= `${(questionsLeft / questionAmt) * 100}%`;
+            progressBar.style.width= `${((questionAmt - questionsLeft) / questionAmt) * 100}%`;
             scoreNum.textContent = score;
             totalSeconds += totalTime - secondsLeft;
             setTimeout(() => {
@@ -134,6 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
             
         } else {
             if (imgSrc == correctAnswer.imgURL) {
+                correctAudio.currentTime = 0;
+                correctAudio.play();
                 correctAns ++;
                 score += 100;
                 selectedBtn.style.backgroundColor = "#6ca678";      
@@ -141,6 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     selectedBtn.style.backgroundColor = "";
                 }, 400);   
             } else {
+                incorrectAudio.currentTime = 0;
+                incorrectAudio.play();
                 incorrectAns ++;
                 selectedBtn.style.backgroundColor = "#a66c70";
                 setTimeout(() => {
@@ -162,5 +187,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start the timer interval
     let interval = setInterval(updateTimer, 1000);
     loadQtn();
-    optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("click", function() {checkAnswer(this, this.querySelector("img").src)}, false));
+    optionsContainer.querySelectorAll("button").forEach(button => button.addEventListener("dblclick", function() {checkAnswer(this, this.querySelector("img").src)}, false));
 });
