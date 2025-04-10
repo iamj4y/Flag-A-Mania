@@ -691,3 +691,7 @@ button:hover {
 .dark-mode #quizContainer #optionsContainer .option p {
   color: #c5daf6;
 }
+
+.dark-mode #scoreContents #scoreDetails p {
+  color: #282828;
+}
