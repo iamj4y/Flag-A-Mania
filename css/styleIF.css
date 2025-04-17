@@ -21,6 +21,8 @@ body {
 
 .container h1 {
     color: #063690;
+    font-family: 'Fredoka';
+    text-align: center;
 }
 
 .section {
