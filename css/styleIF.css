@@ -23,6 +23,7 @@ body {
     color: #063690;
     font-family: 'Fredoka';
     text-align: center;
+    color: #315e9b;
 }
 
 .section {
@@ -46,6 +47,13 @@ body {
 #my-qr-reader img[alt="Camera based scan"] {
     width: 100px !important;
     height: 100px !important;
+}
+
+#video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
 }
 
 button {
@@ -140,7 +148,6 @@ a:hover {
     color: #c5daf6;
 }
 
-
 #bottomNav {
     display: flex;
     font-family: 'Fredoka';
@@ -189,9 +196,17 @@ a:hover {
     color: pink
   }
 
+<<<<<<< HEAD
   #video {
+=======
+#video {
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
     width: 200%;
     max-width: 500px;
     margin: 10px auto;
     display:block;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
