@@ -729,7 +729,7 @@ const categoryMap = {
         {country : "mx", name : "Mexico"},
         {country : "br", name : "Brazil"},
         {country : "ar", name : "Argentina"},
-        {country : "co", name : "Columbia"},
+        {country : "co", name : "Colombia"},
         {country : "pe", name : "Peru"},
         {country : "cl", name : "Chile"},
         {country : "cu", name : "Cuba"},
