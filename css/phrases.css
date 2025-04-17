@@ -247,3 +247,6 @@ a:hover {
     color: #c5daf6;
 }
 
+.dark-mode #bottomNav a:hover{
+  color: pink
+}
