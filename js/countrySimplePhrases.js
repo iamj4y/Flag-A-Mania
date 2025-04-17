@@ -434,6 +434,38 @@ const phraseData = {
         { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
         { "original": "Necesito ayuda, por favor.", "translated": "I need help, please." }
       ],
+      "Colombia": [
+      { "original": "¿Me ayudas?", "translated": "Can you help me?" },
+      { "original": "¿Puedes ayudarme con esto?", "translated": "Can you help me with this?" }
+    ],
+    "Costa Rica": [
+      { "original": "¿Puedes ayudarme?", "translated": "Can you help me?" },
+      { "original": "Necesito ayuda.", "translated": "I need help." }
+    ],
+    "Cuba": [
+      { "original": "¿Puedes ayudarme?", "translated": "Can you help me?" },
+      { "original": "¿Me ayudas con esto?", "translated": "Can you help me with this?" }
+    ],
+    "Dominican Republic": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Podrías ayudarme con esto?", "translated": "Could you help me with this?" }
+    ],
+    "Ecuador": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Necesito ayuda?", "translated": "I need help." }
+    ],
+    "El Salvador": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Necesito ayuda?", "translated": "I need help." }
+    ],
+    "French Guiana": [
+      { "original": "Pouvez-vous m'aider?", "translated": "Can you help me?" },
+      { "original": "J'ai besoin d'aide.", "translated": "I need help." }
+    ],
+    "Guatemala": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Puedes darme una mano?", "translated": "Can you give me a hand?" }
+    ],
       "Guyana": [
         { "original": "Can you help me?", "translated": "Can you help me?" },
         { "original": "I need assistance.", "translated": "I need assistance." }
@@ -445,10 +477,102 @@ const phraseData = {
       "Honduras": [
         { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
         { "original": "¿Puedes darme una mano?", "translated": "Can you give me a hand?" }
-      ]
+      ],
+      "Jamaica": [
+      { "original": "Can you help me?", "translated": "Can you help me?" },
+      { "original": "I need help.", "translated": "I need help." }
+    ],
+    "Mexico": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Necesito ayuda?", "translated": "I need help." }
+    ],
+    "Nicaragua": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "Necesito ayuda, por favor.", "translated": "I need help, please." }
+    ],
+    "Panama": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "Necesito ayuda.", "translated": "I need help." }
+    ],
+    "Peru": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "¿Necesito ayuda?", "translated": "Do I need help?" }
+    ],
+    "Suriname": [
+      { "original": "Kun je me helpen?", "translated": "Can you help me?" },
+      { "original": "Ik heb hulp nodig.", "translated": "I need help." }
+    ],
+    "The Bahamas": [
+      { "original": "Can you help me?", "translated": "Can you help me?" },
+      { "original": "I need help.", "translated": "I need help." }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "Can you help me?", "translated": "Can you help me?" },
+      { "original": "I need some help, please.", "translated": "I need some help, please." }
+    ],
+    "United States of America": [
+      { "original": "Can you help me?", "translated": "Can you help me?" },
+      { "original": "I need some assistance.", "translated": "I need some assistance." }
+    ],
+    "Venezuela": [
+      { "original": "¿Me puedes ayudar?", "translated": "Can you help me?" },
+      { "original": "Necesito ayuda, por favor.", "translated": "I need help, please." }
+    ]
     },
 
   "Clarifying": {
+    "Argentina": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Podrías repetirlo?", "translated": "Could you repeat it?" }
+    ],
+    "Barbados": [
+      { "original": "What do you mean by that?", "translated": "What do you mean by that?" },
+      { "original": "Can you explain it again?", "translated": "Can you explain it again?" }
+    ],
+    "Brazil": [
+      { "original": "O que você quer dizer?", "translated": "What do you mean?" },
+      { "original": "Pode repetir?", "translated": "Can you repeat?" }
+    ],
+    "Canada": [
+      { "original": "What do you mean?", "translated": "What do you mean?" },
+      { "original": "Can you repeat that?", "translated": "Can you repeat that?" }
+    ],
+    "Chile": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Colombia": [
+      { "original": "¿Qué quieres decir?", "translated": "What do you mean?" },
+      { "original": "¿Podrías explicarlo de nuevo?", "translated": "Could you explain it again?" }
+    ],
+    "Costa Rica": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir, por favor?", "translated": "Can you repeat, please?" }
+    ],
+    "Cuba": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir, por favor?", "translated": "Can you repeat, please?" }
+    ],
+    "Dominican Republic": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Ecuador": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes explicarlo de nuevo?", "translated": "Can you explain it again?" }
+    ],
+    "El Salvador": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "French Guiana": [
+      { "original": "Qu'est-ce que cela signifie?", "translated": "What does that mean?" },
+      { "original": "Pouvez-vous répéter?", "translated": "Can you repeat?" }
+    ],
+    "Guatemala": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
     "Guyana": [
       { "original": "What does that mean?", "translated": "What does that mean?" },
       { "original": "Could you repeat that?", "translated": "Could you repeat that?" }
@@ -460,10 +584,102 @@ const phraseData = {
     "Honduras": [
       { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
       { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Jamaica": [
+      { "original": "What does that mean?", "translated": "What does that mean?" },
+      { "original": "Can you repeat?", "translated": "Can you repeat?" }
+    ],
+    "Mexico": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Nicaragua": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Panama": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetirlo?", "translated": "Can you repeat that?" }
+    ],
+    "Peru": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
+    ],
+    "Suriname": [
+      { "original": "Wat betekent dat?", "translated": "What does that mean?" },
+      { "original": "Kun je dat herhalen?", "translated": "Can you repeat that?" }
+    ],
+    "The Bahamas": [
+      { "original": "What does that mean?", "translated": "What does that mean?" },
+      { "original": "Can you repeat?", "translated": "Can you repeat?" }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "What does that mean?", "translated": "What does that mean?" },
+      { "original": "Can you say that again?", "translated": "Can you say that again?" }
+    ],
+    "United States of America": [
+      { "original": "What does that mean?", "translated": "What does that mean?" },
+      { "original": "Can you repeat that, please?", "translated": "Can you repeat that, please?" }
+    ],
+    "Venezuela": [
+      { "original": "¿Qué significa eso?", "translated": "What does that mean?" },
+      { "original": "¿Puedes repetir?", "translated": "Can you repeat?" }
     ]
   },
 
   "Expressing Preferences": {
+    "Argentina": [
+      { "original": "Me gusta mucho el fútbol.", "translated": "I really like soccer." },
+      { "original": "Prefiero tomar mate.", "translated": "I prefer drinking mate." }
+    ],
+    "Barbados": [
+      { "original": "I like the beach.", "translated": "I like the beach." },
+      { "original": "I prefer reggae music.", "translated": "I prefer reggae music." }
+    ],
+    "Brazil": [
+      { "original": "Eu gosto de samba.", "translated": "I like samba." },
+      { "original": "Prefiro a comida brasileira.", "translated": "I prefer Brazilian food." }
+    ],
+    "Canada": [
+      { "original": "I like hockey.", "translated": "I like hockey." },
+      { "original": "I prefer maple syrup.", "translated": "I prefer maple syrup." }
+    ],
+    "Chile": [
+      { "original": "Me gusta el vino chileno.", "translated": "I like Chilean wine." },
+      { "original": "Prefiero las empanadas.", "translated": "I prefer empanadas." }
+    ],
+    "Colombia": [
+      { "original": "Me encanta el café colombiano.", "translated": "I love Colombian coffee." },
+      { "original": "Prefiero la comida típica.", "translated": "I prefer traditional food." }
+    ],
+    "Costa Rica": [
+      { "original": "Me gusta la naturaleza de Costa Rica.", "translated": "I love Costa Rica's nature." },
+      { "original": "Prefiero los platos con arroz.", "translated": "I prefer dishes with rice." }
+    ],
+    "Cuba": [
+      { "original": "Me gusta la música cubana.", "translated": "I like Cuban music." },
+      { "original": "Prefiero el mojito.", "translated": "I prefer mojitos." }
+    ],
+    "Dominican Republic": [
+      { "original": "Me encanta la comida dominicana.", "translated": "I love Dominican food." },
+      { "original": "Prefiero el merengue.", "translated": "I prefer merengue music." }
+    ],
+    "Ecuador": [
+      { "original": "Me gusta el ceviche ecuatoriano.", "translated": "I like Ecuadorian ceviche." },
+      { "original": "Prefiero las playas del Ecuador.", "translated": "I prefer Ecuador’s beaches." }
+    ],
+    "El Salvador": [
+      { "original": "Me gusta la pupusa.", "translated": "I like pupusas." },
+      { "original": "Prefiero la comida típica.", "translated": "I prefer traditional food." }
+    ],
+    "French Guiana": [
+      { "original": "J'aime beaucoup la cuisine créole.", "translated": "I really like Creole cuisine." },
+      { "original": "Je préfère la musique antillaise.", "translated": "I prefer Antillean music." }
+    ],
+    "Guatemala": [
+      { "original": "Me gusta mucho el chocolate guatemalteco.", "translated": "I really like Guatemalan chocolate." },
+      { "original": "Prefiero la comida típica.", "translated": "I prefer traditional food." }
+    ],
     "Guyana": [
       { "original": "I enjoy Guyanese food.", "translated": "I enjoy Guyanese food." },
       { "original": "I prefer reggae music.", "translated": "I prefer reggae music." }
@@ -475,10 +691,102 @@ const phraseData = {
     "Honduras": [
       { "original": "Me gusta la comida hondureña.", "translated": "I like Honduran food." },
       { "original": "Prefiero la salsa.", "translated": "I prefer salsa music." }
+    ],
+    "Jamaica": [
+      { "original": "I like Jamaican food.", "translated": "I like Jamaican food." },
+      { "original": "I prefer reggae music.", "translated": "I prefer reggae music." }
+    ],
+    "Mexico": [
+      { "original": "Me gusta la comida mexicana.", "translated": "I like Mexican food." },
+      { "original": "Prefiero la música ranchera.", "translated": "I prefer ranchera music." }
+    ],
+    "Nicaragua": [
+      { "original": "Me gusta la comida nicaragüense.", "translated": "I like Nicaraguan food." },
+      { "original": "Prefiero la música de marimba.", "translated": "I prefer marimba music." }
+    ],
+    "Panama": [
+      { "original": "Me gusta la comida panameña.", "translated": "I like Panamanian food." },
+      { "original": "Prefiero el reggae.", "translated": "I prefer reggae music." }
+    ],
+    "Peru": [
+      { "original": "Me gusta la comida peruana.", "translated": "I like Peruvian food." },
+      { "original": "Prefiero la música criolla.", "translated": "I prefer creole music." }
+    ],
+    "Suriname": [
+      { "original": "Ik hou van Surinaamse gerechten.", "translated": "I love Surinamese food." },
+      { "original": "Ik luister graag naar kaseko.", "translated": "I enjoy listening to kaseko music." }
+    ],
+    "The Bahamas": [
+      { "original": "I like Bahamian food.", "translated": "I like Bahamian food." },
+      { "original": "I prefer junkanoo music.", "translated": "I prefer junkanoo music." }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "I love doubles.", "translated": "I love doubles." },
+      { "original": "I prefer soca music.", "translated": "I prefer soca music." }
+    ],
+    "United States of America": [
+      { "original": "I like pizza.", "translated": "I like pizza." },
+      { "original": "I prefer country music.", "translated": "I prefer country music." }
+    ],
+    "Venezuela": [
+      { "original": "Me gusta la comida venezolana.", "translated": "I like Venezuelan food." },
+      { "original": "Prefiero la música salsa.", "translated": "I prefer salsa music." }
     ]
   },
 
   "Making Plans": {
+    "Argentina": [
+      { "original": "¿Vamos al cine?", "translated": "Shall we go to the movies?" },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "Barbados": [
+      { "original": "Let’s grab a drink later.", "translated": "Let’s grab a drink later." },
+      { "original": "Are you free tomorrow?", "translated": "Are you free tomorrow?" }
+    ],
+    "Brazil": [
+      { "original": "Vamos à praia?", "translated": "Shall we go to the beach?" },
+      { "original": "Nos vemos amanhã.", "translated": "See you tomorrow." }
+    ],
+    "Canada": [
+      { "original": "Let’s hang out tomorrow.", "translated": "Let’s hang out tomorrow." },
+      { "original": "Are you free this weekend?", "translated": "Are you free this weekend?" }
+    ],
+    "Chile": [
+      { "original": "¿Vamos a la playa este fin de semana?", "translated": "Shall we go to the beach this weekend?" },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "Colombia": [
+      { "original": "¿Vamos al cine?", "translated": "Shall we go to the cinema?" },
+      { "original": "Nos vemos el viernes.", "translated": "We’ll see each other on Friday." }
+    ],
+    "Costa Rica": [
+      { "original": "¿Vamos a la playa este fin de semana?", "translated": "Shall we go to the beach this weekend?" },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "Cuba": [
+      { "original": "Vamos a bailar esta noche.", "translated": "Let’s dance tonight." },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "Dominican Republic": [
+      { "original": "¿Vamos a la playa mañana?", "translated": "Shall we go to the beach tomorrow?" },
+      { "original": "Nos vemos el fin de semana.", "translated": "We’ll see each other this weekend." }
+    ],
+    "Ecuador": [
+      { "original": "Vamos a ir al mercado.", "translated": "Let’s go to the market." },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "El Salvador": [
+      { "original": "¿Vamos al parque?", "translated": "Shall we go to the park?" },
+      { "original": "Nos vemos mañana.", "translated": "See you tomorrow." }
+    ],
+    "French Guiana": [
+      { "original": "On se voit ce soir?", "translated": "Shall we meet tonight?" },
+      { "original": "Allons à la plage demain.", "translated": "Let’s go to the beach tomorrow." }
+    ],
+    "Guatemala": [
+      { "original": "¿Vamos al cine mañana?", "translated": "Shall we go to the movies tomorrow?" },
+      { "original": "Nos vemos en la tarde.", "translated": "See you in the afternoon." }
+    ],
     "Guyana": [
       { "original": "Shall we go to the park tomorrow?", "translated": "Shall we go to the park tomorrow?" },
       { "original": "Let’s meet up on the weekend.", "translated": "Let’s meet up on the weekend." }
@@ -490,7 +798,47 @@ const phraseData = {
     "Honduras": [
       { "original": "¿Vamos a ir a la playa?", "translated": "Shall we go to the beach?" },
       { "original": "Nos vemos el fin de semana.", "translated": "We’ll see each other this weekend." }
-    ]
+    ],
+    "Jamaica": [
+        { "original": "Shall we go to the beach tomorrow?", "translated": "Shall we go to the beach tomorrow?" },
+        { "original": "Let’s meet on the weekend.", "translated": "Let’s meet on the weekend." }
+      ],
+      "Mexico": [
+        { "original": "Vamos a la playa mañana.", "translated": "We’re going to the beach tomorrow." },
+        { "original": "Nos vemos el fin de semana.", "translated": "We’ll see each other this weekend." }
+      ],
+      "Nicaragua": [
+        { "original": "¿Vamos al cine mañana?", "translated": "Shall we go to the movies tomorrow?" },
+        { "original": "Nos vemos en la tarde.", "translated": "We’ll see each other in the afternoon." }
+      ],
+      "Panama": [
+        { "original": "¿Vamos a la playa?", "translated": "Shall we go to the beach?" },
+        { "original": "Nos vemos mañana.", "translated": "We’ll see each other tomorrow." }
+      ],
+      "Peru": [
+        { "original": "¿Vamos al centro comercial?", "translated": "Shall we go to the mall?" },
+        { "original": "Nos vemos después.", "translated": "We’ll see each other later." }
+      ],
+      "Suriname": [
+        { "original": "Laten we naar het strand gaan.", "translated": "Let’s go to the beach." },
+        { "original": "We zien elkaar vanavond.", "translated": "We will see each other tonight." }
+      ],
+      "The Bahamas": [
+        { "original": "Shall we go to the beach tomorrow?", "translated": "Shall we go to the beach tomorrow?" },
+        { "original": "Let’s meet later.", "translated": "Let’s meet later." }
+      ],
+      "Trinidad and Tobago": [
+        { "original": "Let’s go to the beach this weekend.", "translated": "Let’s go to the beach this weekend." },
+        { "original": "We should go out for drinks.", "translated": "We should go out for drinks." }
+      ],
+      "United States of America": [
+        { "original": "Let’s go to a concert.", "translated": "Let’s go to a concert." },
+        { "original": "We should go out this weekend.", "translated": "We should go out this weekend." }
+      ],
+      "Venezuela": [
+        { "original": "¿Vamos al cine mañana?", "translated": "Shall we go to the movies tomorrow?" },
+        { "original": "Nos vemos en la tarde.", "translated": "We’ll see each other in the afternoon." }
+      ]
   },
 
   "Agreeing/Disagreeing": {
