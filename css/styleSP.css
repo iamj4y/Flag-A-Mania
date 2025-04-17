@@ -7,6 +7,7 @@
     background-color: #315e9b;
   align-items: center;
   padding: 10px 10px;
+  font-size: 18px;
 }
 
 nav a {
@@ -42,16 +43,10 @@ a:hover {
     border: 2px solid #ffffff;
 }
 
-.exit-button {
-    left: 0px;
-    margin-right: auto;
-    margin-left: 0;
+#exit {
+    font-size: 80px;
+    margin-top: 20px;
     float: left;
-}
-
-.exit-button img {
-    width:32px;
-    height:32px;
 }
 
   #spMainContent {
