@@ -20,7 +20,7 @@ body {
 }
 
 .container h1 {
-    color: #ffffff;
+    color: #315e9b;
 }
 
 .section {
@@ -44,6 +44,13 @@ body {
 #my-qr-reader img[alt="Camera based scan"] {
     width: 100px !important;
     height: 100px !important;
+}
+
+#video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
 }
 
 button {
@@ -132,4 +139,11 @@ a:hover {
 
 .dark-mode h3 {
     color: #c5daf6;
+}
+
+#video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
 }
