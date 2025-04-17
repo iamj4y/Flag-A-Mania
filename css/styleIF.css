@@ -188,3 +188,10 @@ a:hover {
   .dark-mode #bottomNav a:hover{
     color: pink
   }
+
+  #video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
+}
