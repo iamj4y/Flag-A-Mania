@@ -716,3 +716,7 @@ html.dark-mode {
 .dark-mode #scoreContents #scoreDetails p {
   color: #282828;
 }
+
+.dark-mode span {
+  color: white;
+}

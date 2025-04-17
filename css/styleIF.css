@@ -196,9 +196,17 @@ a:hover {
     color: pink
   }
 
+<<<<<<< HEAD
+  #video {
+=======
 #video {
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
     width: 200%;
     max-width: 500px;
     margin: 10px auto;
     display:block;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
