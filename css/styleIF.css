@@ -46,6 +46,13 @@ body {
     height: 100px !important;
 }
 
+#video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
+}
+
 button {
     padding: 10px 20px;
     border: 1px solid #b2b2b2;
@@ -132,4 +139,11 @@ a:hover {
 
 .dark-mode h3 {
     color: #c5daf6;
+}
+
+#video {
+    width: 200%;
+    max-width: 500px;
+    margin: 10px auto;
+    display:block;
 }
