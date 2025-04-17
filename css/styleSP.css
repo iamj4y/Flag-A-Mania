@@ -7,6 +7,7 @@
     background-color: #315e9b;
   align-items: center;
   padding: 10px 10px;
+  font-size: 18px;
 }
 
 nav a {
@@ -42,16 +43,22 @@ a:hover {
     border: 2px solid #ffffff;
 }
 
-.exit-button {
-    left: 0px;
-    margin-right: auto;
-    margin-left: 0;
+#exit {
+    font-size: 80px;
+    margin-top: 20px;
     float: left;
 }
 
-.exit-button img {
-    width:32px;
-    height:32px;
+#exit:hover {
+    color: rgb(30, 3, 100);
+}
+
+.dark-mode #exit {
+    color: rgb(187, 185, 185);
+}
+
+.dark-mode #exit:hover {
+    color: pink;
 }
 
   #spMainContent {
@@ -127,6 +134,45 @@ h1 {
     color: #c5daf6;
 }
 
+.dark-mode #topNav {
+    background-color: #3f3f3f;
+}
+  
+.dark-mode #bottomNav {
+    background-color: #3f3f3f;
+}
+
+.dark-mode nav a:hover{
+    color: pink;
+  }
+
+.dark-mode #spMainContent {
+    background-color: #474646;
+    border-color: #6c6d6e;
+}
+
+.dark-mode #phrasesToggle {
+    background-color: #5d5a5a;
+}
+
+.dark-mode .spNavLink {
+    background-color: #454545;
+    color: #d4d4db;
+}
+
+.dark-mode .spNavLink:hover {
+    background-color: #0e0e52;
+    color: #f0f7ff;
+}
+
+.dark-mode nav a{
+    color: #c5daf6;
+  }
+
+  .dark-mode #bottomNav a{
+    color: #c5daf6;
+}
+
 #bottomNav {
     display: flex;
     font-family: 'Fredoka';
@@ -138,6 +184,7 @@ h1 {
     margin-top: 2px;
     position: relative;
     width: 100%;
+    font-size: 18px;
   }
   
   #bottomNav a {
@@ -150,3 +197,35 @@ h1 {
   #bottomNav a:hover {
       color: pink;
   }  
+
+  #phraseList {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+  }
+
+  #originalPhrase {
+    color: #032078;
+    font-size: 30px;
+  }
+
+  #translatedPhrase {
+    color:#315e9b;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .dark-mode #phraseList {
+    color: white;
+  }
+
+  .dark-mode #originalPhrase {
+    color: white;
+  }
+
+  .dark-mode #translatedPhrase {
+    color: rgb(216, 214, 214);
+  }
+
+  .dark-mode #phrasesToggle a {
+    color: rgb(255, 255, 255);
+  }

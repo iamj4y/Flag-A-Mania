@@ -8,6 +8,13 @@
     <script src="../js/playPage.js"></script>
     <script src="../js/darkmode.js"></script>
     <script src="https://kit.fontawesome.com/1f2bd98ecb.js" crossorigin="anonymous"></script>
+    <script>
+      (function() {
+          if (localStorage.getItem("darkMode") === "enabled") {
+              document.documentElement.classList.add("dark-mode");
+          }
+      })();
+  </script>
   </head>
   <body>
     <nav id="topNav">
