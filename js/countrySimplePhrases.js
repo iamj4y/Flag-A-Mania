@@ -842,6 +842,58 @@ const phraseData = {
   },
 
   "Agreeing/Disagreeing": {
+    "Argentina": [
+      { "original": "Estoy de acuerdo.", "translated": "I agree." },
+      { "original": "No me convence.", "translated": "I don't agree." }
+    ],
+    "Barbados": [
+      { "original": "I agree with you.", "translated": "I agree with you." },
+      { "original": "That’s not right.", "translated": "That’s not right." }
+    ],
+    "Brazil": [
+      { "original": "Eu concordo.", "translated": "I agree." },
+      { "original": "Não concordo com isso.", "translated": "I don't agree with that." }
+    ],
+    "Canada": [
+      { "original": "I agree with you.", "translated": "I agree with you." },
+      { "original": "I don’t think so.", "translated": "I don’t think so." }
+    ],
+    "Chile": [
+      { "original": "Estoy de acuerdo.", "translated": "I agree." },
+      { "original": "No creo que sea una buena idea.", "translated": "I don’t think it’s a good idea." }
+    ],
+    "Colombia": [
+      { "original": "Estoy de acuerdo.", "translated": "I agree." },
+      { "original": "No estoy seguro de eso.", "translated": "I’m not sure about that." }
+    ],
+    "Costa Rica": [
+      { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
+      { "original": "No estoy de acuerdo.", "translated": "I don’t agree." }
+    ],
+    "Cuba": [
+      { "original": "Estoy de acuerdo.", "translated": "I agree." },
+      { "original": "No lo creo.", "translated": "I don’t think so." }
+    ],
+    "Dominican Republic": [
+      { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
+      { "original": "No, no estoy de acuerdo.", "translated": "No, I don’t agree." }
+    ],
+    "Ecuador": [
+      { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
+      { "original": "No creo que sea una buena idea.", "translated": "I don’t think it’s a good idea." }
+    ],
+    "El Salvador": [
+      { "original": "Estoy de acuerdo.", "translated": "I agree." },
+      { "original": "No estoy seguro de eso.", "translated": "I’m not sure about that." }
+    ],
+    "French Guiana": [
+      { "original": "Oui, je suis d'accord.", "translated": "Yes, I agree." },
+      { "original": "Non, je ne suis pas d'accord.", "translated": "No, I don’t agree." }
+    ],
+    "Guatemala": [
+      { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
+      { "original": "No creo que sea una buena idea.", "translated": "I don’t think it’s a good idea." }
+    ],
     "Guyana": [
       { "original": "Yes, I agree.", "translated": "Yes, I agree." },
       { "original": "No, I don’t think so.", "translated": "No, I don’t think so." }
@@ -853,6 +905,52 @@ const phraseData = {
     "Honduras": [
       { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
       { "original": "No, no estoy de acuerdo.", "translated": "No, I don’t agree." }
+    ],
+    "Jamaica": [
+      {
+        "original": "Yes, I agree.",
+        "translated": "Yes, I agree."
+      },
+      {
+        "original": "No, I don’t think so.",
+        "translated": "No, I don’t think so."
+      }
+    ],
+    "Mexico": [
+      {
+        "original": "Sí, estoy de acuerdo.",
+        "translated": "Yes, I agree."
+      }
+    ],
+    "Nicaragua": [
+      {
+        "original": "Sí, estoy de acuerdo.",
+        "translated": "Yes, I agree."
+      },
+      {
+        "original": "No, no creo.",
+        "translated": "No, I don't think so."
+      }
+    ],
+    "Panama": [
+      {
+        "original": "Sí, estoy de acuerdo.",
+        "translated": "Yes, I agree."
+      },
+      {
+        "original": "No, no estoy seguro.",
+        "translated": "No, I’m not sure."
+      }
+    ],
+    "Peru": [
+      {
+        "original": "Sí, estoy de acuerdo.",
+        "translated": "Yes, I agree."
+      },
+      {
+        "original": "No, no me gusta eso.",
+        "translated": "No, I don’t like that."
+      }
     ]
   },
 
@@ -921,6 +1019,56 @@ const phraseData = {
             { "original": "¿Dónde está el baño?", "translated": "Where is the bathroom?" },
             { "original": "¿Cuánto cuesta esto?", "translated": "How much does this cost?" }
             ],
+            "Jamaica": [
+      {
+        "original": "Where is the bathroom?",
+        "translated": "Where is the bathroom?"
+      },
+      {
+        "original": "How much does this cost?",
+        "translated": "How much does this cost?"
+      }
+    ],
+    "Mexico": [
+      {
+        "original": "¿Dónde está el baño?",
+        "translated": "Where is the bathroom?"
+      },
+      {
+        "original": "¿Cuánto cuesta esto?",
+        "translated": "How much does this cost?"
+      }
+    ],
+    "Nicaragua": [
+      {
+        "original": "¿Dónde está el baño?",
+        "translated": "Where is the bathroom?"
+      },
+      {
+        "original": "¿Cuánto cuesta esto?",
+        "translated": "How much does this cost?"
+      }
+    ],
+    "Panama": [
+      {
+        "original": "¿Dónde está el baño?",
+        "translated": "Where is the bathroom?"
+      },
+      {
+        "original": "¿Cuánto cuesta esto?",
+        "translated": "How much does this cost?"
+      }
+    ],
+    "Peru": [
+      {
+        "original": "¿Dónde está el baño?",
+        "translated": "Where is the bathroom?"
+      },
+      {
+        "original": "¿Cuánto cuesta esto?",
+        "translated": "How much does this cost?"
+      }
+    ],
     },
 
     "Small Talk": {
@@ -987,7 +1135,57 @@ const phraseData = {
         "Honduras": [
             { "original": "Hace mucho calor hoy.", "translated": "It’s very hot today." },
             { "original": "¿Cómo va todo?", "translated": "How’s everything going?" }
-        ]
+        ],
+        "Jamaica": [
+      {
+        "original": "It’s very hot today.",
+        "translated": "It’s very hot today."
+      },
+      {
+        "original": "How’s everything?",
+        "translated": "How’s everything?"
+      }
+    ],
+    "Mexico": [
+      {
+        "original": "Hace calor hoy.",
+        "translated": "It’s hot today."
+      },
+      {
+        "original": "¿Cómo va todo?",
+        "translated": "How’s everything going?"
+      }
+    ],
+    "Nicaragua": [
+      {
+        "original": "Hace calor hoy.",
+        "translated": "It’s hot today."
+      },
+      {
+        "original": "¿Cómo te va?",
+        "translated": "How’s it going?"
+      }
+    ],
+    "Panama": [
+      {
+        "original": "Hace mucho calor.",
+        "translated": "It’s very hot."
+      },
+      {
+        "original": "¿Cómo estás?",
+        "translated": "How are you?"
+      }
+    ],
+    "Peru": [
+      {
+        "original": "Hace buen tiempo hoy.",
+        "translated": "The weather is nice today."
+      },
+      {
+        "original": "¿Cómo va todo?",
+        "translated": "How’s everything going?"
+      }
+    ],
     },
 
     "Expressing Opinions": {
@@ -1054,7 +1252,57 @@ const phraseData = {
         "Honduras": [
             { "original": "Creo que es increíble.", "translated": "I think it’s amazing." },
             { "original": "En mi opinión, está muy bien.", "translated": "In my opinion, it’s very good." }
-        ]
+        ],
+        "Jamaica": [
+      {
+        "original": "I think it’s great.",
+        "translated": "I think it’s great."
+      },
+      {
+        "original": "In my opinion, it’s very good.",
+        "translated": "In my opinion, it’s very good."
+      }
+    ],
+    "Mexico": [
+      {
+        "original": "Creo que es increíble.",
+        "translated": "I think it’s amazing."
+      },
+      {
+        "original": "En mi opinión, está muy bien.",
+        "translated": "In my opinion, it’s very good."
+      }
+    ],
+    "Nicaragua": [
+      {
+        "original": "Creo que está bien.",
+        "translated": "I think it's good."
+      },
+      {
+        "original": "Me parece una buena idea.",
+        "translated": "It seems like a good idea."
+      }
+    ],
+    "Panama": [
+      {
+        "original": "Creo que es excelente.",
+        "translated": "I think it’s excellent."
+      },
+      {
+        "original": "Es una buena idea.",
+        "translated": "It’s a good idea."
+      }
+    ],
+    "Peru": [
+      {
+        "original": "Creo que es maravilloso.",
+        "translated": "I think it’s wonderful."
+      },
+      {
+        "original": "Me parece interesante.",
+        "translated": "It seems interesting to me."
+      }
+    ]
     }
 }  
 
