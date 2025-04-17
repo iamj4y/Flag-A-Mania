@@ -650,7 +650,7 @@ button:hover {
     color: #032078;
   }
 
-.dark-mode {
+html.dark-mode {
     background-color: #282828;
     color:white;
 }
@@ -677,7 +677,11 @@ button:hover {
 }
 
 .dark-mode #topNav {
-  background-color: #282828;
+  background-color: #3f3f3f;
+}
+
+.dark-mode #bottomNav {
+  background-color: #3f3f3f;
 }
 
 .dark-mode #timeLeft {
@@ -688,10 +692,31 @@ button:hover {
   color: #c5daf6;
 }
 
+.dark-mode footer a{
+  color: #c5daf6;
+}
+
+
+.dark-mode nav a:hover{
+  color: pink;
+}
+
+.dark-mode #bottomNav a{
+  color: #c5daf6;
+}
+
+.dark-mode #bottomNav a:hover{
+  color: pink
+}
+
 .dark-mode #quizContainer #optionsContainer .option p {
   color: #c5daf6;
 }
 
 .dark-mode #scoreContents #scoreDetails p {
   color: #282828;
+}
+
+.dark-mode span {
+  color: white;
 }

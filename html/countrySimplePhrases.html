@@ -1,10 +1,17 @@
-<html>
+<html lang="en">
   <head>
     <title>Phrases | Flag-A-Mania</title>
     <link rel="stylesheet" href="../css/styleSP.css">
     <script src="../js/countrySimplePhrases.js"></script>
     <script src="../js/darkmode.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      (function() {
+          if (localStorage.getItem("darkMode") === "enabled") {
+              document.documentElement.classList.add("dark-mode");
+          }
+      })();
+  </script>
   </head>
   <body>
       <header>
@@ -17,7 +24,7 @@
         </nav>
         <a href="./simplePhrases.html" class="exit-button">
             <div id="exit">
-                <img src="../img/icons/close.png">
+              <i class="fa fa-arrow-circle-left"></i>
             </div>
         </a>
     </header>
@@ -46,8 +53,10 @@
         <a href="#" class="spNavLink" id="smallTalk">Small Talk</a>
         <a href="#" class="spNavLink" id="exOpinions">Expressing Opinions</a>
       </nav>
-      <div id="phraseContents">
+      <div id="phraseSection">
+        <ul id="phraseList">
 
+        </ul>
       </div>
     </div>
     <footer id="bottomNav">

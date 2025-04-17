@@ -20,6 +20,9 @@ body {
 }
 
 .container h1 {
+    color: #063690;
+    font-family: 'Fredoka';
+    text-align: center;
     color: #315e9b;
 }
 
@@ -133,6 +136,10 @@ a:hover {
     color:white;
 }
 
+.dark-mode body {
+    background-color: #282828;
+}
+
 .dark-mode h1 {
     color:#c5daf6
 }
@@ -141,9 +148,65 @@ a:hover {
     color: #c5daf6;
 }
 
+#bottomNav {
+    display: flex;
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+    align-items: center;
+    padding: 0;
+    height: 80px;
+    bottom: 0;
+    margin-top: 2px;
+    position: relative;
+    width: 100%;
+  }
+  
+  #bottomNav a {
+      padding-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+  }
+  
+  #bottomNav a:hover {
+      color: pink;
+  }  
+
+  .dark-mode #topNav {
+    background-color: #3f3f3f;
+}
+  
+.dark-mode #bottomNav {
+    background-color: #3f3f3f;
+}
+
+.dark-mode nav a{
+    color: #c5daf6;
+  }
+
+.dark-mode #bottomNav a{
+    color: #c5daf6;
+}
+
+.dark-mode nav a:hover{
+    color: pink;
+  }
+
+  .dark-mode #bottomNav a:hover{
+    color: pink
+  }
+
+<<<<<<< HEAD
+  #video {
+=======
 #video {
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
     width: 200%;
     max-width: 500px;
     margin: 10px auto;
     display:block;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ff5cc7d16341bded76e8ee114195955897547c9e
