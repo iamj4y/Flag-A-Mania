@@ -951,6 +951,26 @@ const phraseData = {
         "original": "No, no me gusta eso.",
         "translated": "No, I don’t like that."
       }
+    ],
+    "Suriname": [
+      { "original": "Ja, ik ben het ermee eens.", "translated": "Yes, I agree." },
+      { "original": "Nee, ik denk niet zo.", "translated": "No, I don’t think so." }
+    ],
+    "The Bahamas": [
+      { "original": "Yes, I agree.", "translated": "Yes, I agree." },
+      { "original": "No, I don’t think so.", "translated": "No, I don’t think so." }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "Yes, I agree with that.", "translated": "Yes, I agree with that." },
+      { "original": "No, I don’t think that’s a good idea.", "translated": "No, I don’t think that’s a good idea." }
+    ],
+    "United States of America": [
+      { "original": "Yes, I agree.", "translated": "Yes, I agree." },
+      { "original": "No, I don't think so.", "translated": "No, I don’t think so." }
+    ],
+    "Venezuela": [
+      { "original": "Sí, estoy de acuerdo.", "translated": "Yes, I agree." },
+      { "original": "No, no creo.", "translated": "No, I don’t think so." }
     ]
   },
 
@@ -1069,6 +1089,26 @@ const phraseData = {
         "translated": "How much does this cost?"
       }
     ],
+    "Suriname": [
+      { "original": "Waar is het toilet?", "translated": "Where is the bathroom?" },
+      { "original": "Hoeveel kost dit?", "translated": "How much does this cost?" }
+    ],
+    "The Bahamas": [
+      { "original": "Where is the bathroom?", "translated": "Where is the bathroom?" },
+      { "original": "How much does this cost?", "translated": "How much does this cost?" }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "Where is the bathroom?", "translated": "Where is the bathroom?" },
+      { "original": "How much does this cost?", "translated": "How much does this cost?" }
+    ],
+    "United States of America": [
+      { "original": "Where is the restroom?", "translated": "Where is the restroom?" },
+      { "original": "How much does it cost?", "translated": "How much does it cost?" }
+    ],
+    "Venezuela": [
+      { "original": "¿Dónde está el baño?", "translated": "Where is the bathroom?" },
+      { "original": "¿Cuánto cuesta esto?", "translated": "How much does this cost?" }
+    ]
     },
 
     "Small Talk": {
@@ -1186,6 +1226,26 @@ const phraseData = {
         "translated": "How’s everything going?"
       }
     ],
+    "Suriname": [
+      { "original": "Het is warm vandaag.", "translated": "It’s warm today." },
+      { "original": "Hoe gaat het?", "translated": "How’s it going?" }
+    ],
+    "The Bahamas": [
+      { "original": "It’s a beautiful day.", "translated": "It’s a beautiful day." },
+      { "original": "How’s it going?", "translated": "How’s it going?" }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "It’s so hot today.", "translated": "It’s so hot today." },
+      { "original": "How are you?", "translated": "How are you?" }
+    ],
+    "United States of America": [
+      { "original": "The weather is nice today.", "translated": "The weather is nice today." },
+      { "original": "How’s everything?", "translated": "How’s everything?" }
+    ],
+    "Venezuela": [
+      { "original": "Hace calor hoy.", "translated": "It’s hot today." },
+      { "original": "¿Cómo te va?", "translated": "How’s it going?" }
+    ]
     },
 
     "Expressing Opinions": {
@@ -1302,6 +1362,26 @@ const phraseData = {
         "original": "Me parece interesante.",
         "translated": "It seems interesting to me."
       }
+    ],
+    "Suriname": [
+      { "original": "Ik denk dat het prachtig is.", "translated": "I think it’s beautiful." },
+      { "original": "In mijn opinie is het goed.", "translated": "In my opinion, it’s good." }
+    ],
+    "The Bahamas": [
+      { "original": "I think it’s amazing.", "translated": "I think it’s amazing." },
+      { "original": "In my opinion, it’s great.", "translated": "In my opinion, it’s great." }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "I think it’s great.", "translated": "I think it’s great." },
+      { "original": "I don’t really like that.", "translated": "I don’t really like that." }
+    ],
+    "United States of America": [
+      { "original": "I think it’s awesome.", "translated": "I think it’s awesome." },
+      { "original": "I don’t really care for that.", "translated": "I don’t really care for that." }
+    ],
+    "Venezuela": [
+      { "original": "Creo que está bien.", "translated": "I think it’s good." },
+      { "original": "Me parece una buena idea.", "translated": "It seems like a good idea." }
     ]
     }
 }  
