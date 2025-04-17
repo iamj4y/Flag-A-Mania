@@ -261,6 +261,12 @@ const phraseData = {
         { "original": "Disculpame", "translated": "Excuse me" },
         { "original": "¿Cómo estás?", "translated": "How are you?" }
       ],
+      "The Bahamas": [
+        { "original": "Thank you", "translated": "Thank you" },
+        { "original": "Please", "translated": "Please" },
+        { "original": "Excuse me", "translated": "Excuse me" },
+        { "original": "No problem", "translated": "You're welcome" }
+      ],
       "Barbados": [
         { "original": "Thank you", "translated": "Thank you" },
         { "original": "Please", "translated": "Please" },
@@ -285,6 +291,54 @@ const phraseData = {
         { "original": "Perdón", "translated": "Excuse me" },
         { "original": "De nada", "translated": "You're welcome" }
       ],
+      "Colombia": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Disculpa", "translated": "Excuse me" },
+      { "original": "Con gusto", "translated": "You're welcome" }
+    ],
+    "Costa Rica": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Con permiso", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Cuba": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Dominican Republic": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "Con gusto", "translated": "You're welcome" }
+    ],
+    "Ecuador": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "Con gusto", "translated": "You're welcome" }
+    ],
+    "El Salvador": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "French Guiana": [
+      { "original": "Merci", "translated": "Thank you" },
+      { "original": "S'il vous plaît", "translated": "Please" },
+      { "original": "Excusez-moi", "translated": "Excuse me" },
+      { "original": "De rien", "translated": "You're welcome" }
+    ],
+    "Guatemala": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "Con gusto", "translated": "You're welcome" }
+    ],
       "Guyana": [
       { "original": "Thank you", "translated": "Thank you" },
       { "original": "Please", "translated": "Please" },
@@ -302,7 +356,61 @@ const phraseData = {
       { "original": "Por favor", "translated": "Please" },
       { "original": "Perdón", "translated": "Excuse me" },
       { "original": "De nada", "translated": "You're welcome" }
-        ]
+        ],
+    "Jamaica": [
+      { "original": "Thank you", "translated": "Thank you" },
+      { "original": "Please", "translated": "Please" },
+      { "original": "Excuse me", "translated": "Excuse me" },
+      { "original": "No problem", "translated": "You're welcome" }
+    ],
+    "Mexico": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Nicaragua": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Panama": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Peru": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ],
+    "Suriname": [
+      { "original": "Dank je wel", "translated": "Thank you" },
+      { "original": "Alsjeblieft", "translated": "Please" },
+      { "original": "Excuseer", "translated": "Excuse me" },
+      { "original": "Graag gedaan", "translated": "You're welcome" }
+    ],
+    "Trinidad and Tobago": [
+      { "original": "Thank you", "translated": "Thank you" },
+      { "original": "Please", "translated": "Please" },
+      { "original": "Excuse me", "translated": "Excuse me" },
+      { "original": "You're welcome", "translated": "You're welcome" }
+    ],
+    "United States of America": [
+      { "original": "Thank you", "translated": "Thank you" },
+      { "original": "Please", "translated": "Please" },
+      { "original": "Excuse me", "translated": "Excuse me" },
+      { "original": "You're welcome", "translated": "You're welcome" }
+    ],
+    "Venezuela": [
+      { "original": "Gracias", "translated": "Thank you" },
+      { "original": "Por favor", "translated": "Please" },
+      { "original": "Perdón", "translated": "Excuse me" },
+      { "original": "De nada", "translated": "You're welcome" }
+    ]
     },
 
     "Asking for Help": {
