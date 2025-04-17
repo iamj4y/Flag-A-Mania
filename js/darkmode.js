@@ -10,21 +10,21 @@ document.addEventListener("DOMContentLoaded", function () {
         images.forEach(imageObj => {
             let imgElement = document.getElementById(imageObj.id);
             if (imgElement) {
-                imgElement.src = document.body.classList.contains("dark-mode") ? imageObj.dark : imageObj.light;
+                imgElement.src = document.documentElement.classList.contains("dark-mode") ? imageObj.dark : imageObj.light;
             }
         })
     }
 
     if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
+        document.documentElement.classList.add("dark-mode");
         darkModeToggle.classList.replace("fa-moon-o", "fa-sun-o");
         updateImages();
     }
 
     darkModeToggle.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
+        document.documentElement.classList.toggle("dark-mode");
 
-        if (document.body.classList.contains("dark-mode")) {
+        if (document.documentElement.classList.contains("dark-mode")) {
             localStorage.setItem("darkMode", "enabled");
             darkModeToggle.classList.replace("fa-moon-o", "fa-sun-o");
         
