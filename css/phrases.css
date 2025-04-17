@@ -214,3 +214,12 @@ a:hover {
     background-color: #575757;
     border: 2px solid #315e9b
   }
+
+  .dark-mode #topNav {
+    background-color: #3f3f3f;
+}
+  
+.dark-mode #bottomNav {
+    background-color: #3f3f3f;
+  }
+
